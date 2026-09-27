@@ -369,4 +369,618 @@ section{
 }
 
 .project-image{
-    height:290
+    height:290px;
+background:linear-gradient(135deg,#dfe8e8,#f5f8f8);
+display:flex;
+align-items:center;
+justify-content:center;
+color:#159c78;
+font-size:14px;
+font-weight:700;
+}
+
+.project-content{
+padding:25px;
+}
+
+.project-content h3{
+font-size:21px;
+margin-bottom:8px;
+}
+
+.project-content p{
+color:#667085;
+font-size:14px;
+}
+
+/* PROCESS */
+
+.process-grid{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:20px;
+}
+
+.process-item{
+position:relative;
+padding:30px;
+border:1px solid #e7eaed;
+border-radius:12px;
+}
+
+.process-number{
+font-size:13px;
+font-weight:800;
+color:#159c78;
+margin-bottom:20px;
+}
+
+.process-item h3{
+font-size:19px;
+margin-bottom:10px;
+}
+
+.process-item p{
+color:#667085;
+font-size:14px;
+}
+
+/* CTA */
+
+.cta{
+background:#0d2638;
+text-align:center;
+}
+
+.cta-content{
+max-width:720px;
+margin:auto;
+}
+
+.cta h2{
+color:white;
+font-size:48px;
+line-height:1.1;
+letter-spacing:-2px;
+margin-bottom:18px;
+}
+
+.cta p{
+color:#c5d2db;
+font-size:17px;
+margin-bottom:30px;
+}
+
+/* FOOTER */
+
+footer{
+background:#071827;
+color:white;
+padding:35px 0;
+}
+
+.footer-content{
+display:flex;
+justify-content:space-between;
+align-items:center;
+gap:20px;
+}
+
+.footer-logo{
+font-size:21px;
+font-weight:800;
+}
+
+.footer-logo span{
+color:#35d0a0;
+}
+
+.footer-text{
+color:#9eacb6;
+font-size:13px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:900px){
+
+.nav-links{
+    display:none;
+}
+
+.menu{
+    display:block;
+}
+
+.hero{
+    min-height:700px;
+}
+
+.hero-card{
+    display:none;
+}
+
+.about-grid{
+    grid-template-columns:1fr;
+    gap:45px;
+}
+
+.services-grid{
+    grid-template-columns:1fr 1fr;
+}
+
+.process-grid{
+    grid-template-columns:1fr 1fr;
+}
+
+}
+
+@media(max-width:600px){
+
+section{
+    padding:75px 0;
+}
+
+.hero h1{
+    font-size:46px;
+}
+
+.hero p{
+    font-size:16px;
+}
+
+.section-head h2,
+.about h2{
+    font-size:36px;
+}
+
+.services-grid,
+.projects-grid,
+.process-grid{
+    grid-template-columns:1fr;
+}
+
+.stats{
+    grid-template-columns:1fr;
+}
+
+.cta h2{
+    font-size:36px;
+}
+
+.footer-content{
+    flex-direction:column;
+    text-align:center;
+}
+
+}
+</style>
+
+</head><body><header>
+    <div class="container nav">    <a href="#" class="logo">
+        North<span>line</span>
+    </a>
+
+    <nav class="nav-links">
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#projects">Projects</a>
+        <a href="#process">Process</a>
+        <a href="#contact" class="nav-button">Let's Talk</a>
+    </nav>
+
+    <div class="menu">☰</div>
+
+</div>
+
+</header><!-- HERO --><section class="hero"><div class="container">
+
+    <div class="hero-content">
+
+        <div class="eyebrow">
+            Modern Business Solutions
+        </div>
+
+        <h1>
+            Build a business people remember.
+        </h1>
+
+        <p>
+            Northline helps modern businesses create stronger brands,
+            better digital experiences and sustainable growth.
+        </p>
+
+        <div class="buttons">
+
+            <a href="#contact" class="btn btn-primary">
+                Start a Project
+            </a>
+
+            <a href="#projects" class="btn btn-outline">
+                View Our Work
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+<div class="hero-card">
+
+    <div class="hero-card-top">
+
+        <div class="hero-card-logo">
+            NORTHLINE
+        </div>
+
+        <div class="dot"></div>
+
+    </div>
+
+    <div class="fake-line"></div>
+    <div class="fake-line short"></div>
+
+    <div class="hero-products">
+
+        <div class="product"></div>
+        <div class="product"></div>
+        <div class="product"></div>
+
+    </div>
+
+</div>
+
+</section><!-- ABOUT --><section class="about" id="about"><div class="container about-grid">
+
+    <div>
+
+        <div class="section-label">
+            About Northline
+        </div>
+
+        <h2>
+            Strategy, design and technology working together.
+        </h2>
+
+    </div>
+
+    <div>
+
+        <p class="about-text">
+            We create thoughtful digital experiences for ambitious
+            businesses. From brand identity to websites and digital
+            strategy, our work is designed to help businesses move forward.
+        </p>
+
+        <div class="stats">
+
+            <div class="stat">
+                <strong>50+</strong>
+                <span>Projects completed</span>
+            </div>
+
+            <div class="stat">
+                <strong>12</strong>
+                <span>Industries served</span>
+            </div>
+
+            <div class="stat">
+                <strong>98%</strong>
+                <span>Client satisfaction</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+</section><!-- SERVICES --><section id="services"><div class="container">
+
+    <div class="section-head">
+
+        <div class="section-label">
+            What We Do
+        </div>
+
+        <h2>
+            Everything your business needs to move forward.
+        </h2>
+
+        <p>
+            Practical solutions combining creative thinking,
+            modern technology and business strategy.
+        </p>
+
+    </div>
+
+    <div class="services-grid">
+
+        <div class="service">
+
+            <div class="icon">01</div>
+
+            <h3>Brand Strategy</h3>
+
+            <p>
+                Clear positioning, visual direction and brand systems
+                designed to make your business memorable.
+            </p>
+
+        </div>
+
+        <div class="service">
+
+            <div class="icon">02</div>
+
+            <h3>Web Design</h3>
+
+            <p>
+                Modern, responsive websites designed around your
+                customers and business goals.
+            </p>
+
+        </div>
+
+        <div class="service">
+
+            <div class="icon">03</div>
+
+            <h3>Digital Growth</h3>
+
+            <p>
+                Digital experiences and strategies that help businesses
+                attract, engage and convert customers.
+            </p>
+
+        </div>
+
+        <div class="service">
+
+            <div class="icon">04</div>
+
+            <h3>E-Commerce</h3>
+
+            <p>
+                Clean and conversion-focused online stores built for
+                modern shopping experiences.
+            </p>
+
+        </div>
+
+        <div class="service">
+
+            <div class="icon">05</div>
+
+            <h3>UI / UX Design</h3>
+
+            <p>
+                Simple and intuitive interfaces that make digital
+                products easier and more enjoyable to use.
+            </p>
+
+        </div>
+
+        <div class="service">
+
+            <div class="icon">06</div>
+
+            <h3>Consulting</h3>
+
+            <p>
+                Practical digital guidance to help you choose the right
+                tools, strategy and direction.
+            </p>
+
+        </div>
+
+    </div>
+
+</div>
+
+</section><!-- PROJECTS --><section class="projects" id="projects"><div class="container">
+
+    <div class="section-head">
+
+        <div class="section-label">
+            Selected Work
+        </div>
+
+        <h2>
+            A selection of concept projects.
+        </h2>
+
+        <p>
+            Self-initiated demo projects created to explore modern
+            business and digital design.
+        </p>
+
+    </div>
+
+    <div class="projects-grid">
+
+        <div class="project">
+
+            <div class="project-image">
+                BUSINESS WEBSITE
+            </div>
+
+            <div class="project-content">
+
+                <h3>Corporate Website</h3>
+
+                <p>
+                    A modern business website concept focused on
+                    credibility, clarity and lead generation.
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="project">
+
+            <div class="project-image">
+                E-COMMERCE
+            </div>
+
+            <div class="project-content">
+
+                <h3>Online Store</h3>
+
+                <p>
+                    A clean e-commerce concept designed around products,
+                    usability and conversion.
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="project">
+
+            <div class="project-image">
+                BRAND IDENTITY
+            </div>
+
+            <div class="project-content">
+
+                <h3>Brand Identity</h3>
+
+                <p>
+                    A visual identity concept created for a modern
+                    growing business.
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="project">
+
+            <div class="project-image">
+                LANDING PAGE
+            </div>
+
+            <div class="project-content">
+
+                <h3>Product Landing Page</h3>
+
+                <p>
+                    A focused landing page concept designed to communicate
+                    a product clearly and encourage action.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+</section><!-- PROCESS --><section id="process"><div class="container">
+
+    <div class="section-head">
+
+        <div class="section-label">
+            Our Process
+        </div>
+
+        <h2>
+            Simple process. Clear results.
+        </h2>
+
+        <p>
+            A straightforward approach from the first conversation
+            to the final delivery.
+        </p>
+
+    </div>
+
+    <div class="process-grid">
+
+        <div class="process-item">
+
+            <div class="process-number">01 / DISCOVER</div>
+
+            <h3>Understand</h3>
+
+            <p>
+                We learn about your business, audience and goals.
+            </p>
+
+        </div>
+
+        <div class="process-item">
+
+            <div class="process-number">02 / PLAN</div>
+
+            <h3>Strategize</h3>
+
+            <p>
+                We define the right structure, direction and solution.
+            </p>
+
+        </div>
+
+        <div class="process-item">
+
+            <div class="process-number">03 / CREATE</div>
+
+            <h3>Build</h3>
+
+            <p>
+                We turn the strategy into a polished digital experience.
+            </p>
+
+        </div>
+
+        <div class="process-item">
+
+            <div class="process-number">04 / LAUNCH</div>
+
+            <h3>Deliver</h3>
+
+            <p>
+                We refine, test and prepare the final project for launch.
+            </p>
+
+        </div>
+
+    </div>
+
+</div>
+
+</section><!-- CTA --><section class="cta" id="contact"><div class="container cta-content">
+
+    <h2>
+        Ready to build something better?
+    </h2>
+
+    <p>
+        Tell us about your project and let's create something
+        your customers will remember.
+    </p>
+
+    <a href="mailto:hello@example.com" class="btn btn-primary">
+        Start a Conversation
+    </a>
+
+</div>
+
+</section><!-- FOOTER --><footer><div class="container footer-content">
+
+    <div class="footer-logo">
+        North<span>line</span>
+    </div>
+
+    <div class="footer-text">
+        © 2026 Northline. Self-initiated demo website concept.
+    </div>
+
+</div>
+
+</footer></body>
+</html>
