@@ -122,18 +122,17 @@ button {
 
 .hero-image {
     height: 470px;
-}
-
-.hero-placeholder {
-    width: 100%;
-    height: 100%;
-    background: #ded8cf;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #777777;
-    font-size: 14px;
-    letter-spacing: 1px;
+    overflow: hidden;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
 }
 
 /* Mobile */
@@ -156,12 +155,6 @@ button {
     .hero-image {
         height: 350px;
     }
-    .hero-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-}
 
     .hero h1 {
         letter-spacing: -2px;
