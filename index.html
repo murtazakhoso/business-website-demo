@@ -157,138 +157,17 @@ background:#fff;
 .hero-preview{
 background:#172033;
 border-radius:16px;
-padding:18px;
+padding:14px;
 box-shadow:0 25px 60px rgba(20,30,50,.16);
 }
 
-.preview-window{
-background:#f8fafc;
+.hero-image{
+width:100%;
+height:390px;
+object-fit:cover;
+display:block;
 border-radius:10px;
-overflow:hidden;
 }
-
-.preview-top{
-height:34px;
-background:#e9edf2;
-display:flex;
-align-items:center;
-gap:6px;
-padding:0 12px;
-}
-
-.preview-dot{
-width:8px;
-height:8px;
-border-radius:50%;
-background:#9aa3af;
-}
-
-.preview-body{
-display:grid;
-grid-template-columns:75px 1fr;
-min-height:390px;
-}
-
-.preview-sidebar{
-background:#111827;
-padding:18px 10px;
-}
-
-.side-logo{
-height:10px;
-width:38px;
-background:#fff;
-opacity:.9;
-margin-bottom:28px;
-border-radius:2px;
-}
-
-.side-line{
-height:6px;
-background:#374151;
-border-radius:2px;
-margin:12px 0;
-}
-
-.side-line.active{
-background:#2563eb;
-}
-
-.preview-main{
-padding:25px;
-}
-
-.preview-heading{
-width:65%;
-height:20px;
-background:#172033;
-border-radius:3px;
-margin-bottom:10px;
-}
-
-.preview-sub{
-width:45%;
-height:8px;
-background:#cbd5e1;
-border-radius:2px;
-margin-bottom:25px;
-}
-
-.preview-cards{
-display:grid;
-grid-template-columns:repeat(3,1fr);
-gap:10px;
-margin-bottom:22px;
-}
-
-.preview-card{
-height:95px;
-background:#fff;
-border:1px solid #e5e7eb;
-border-radius:6px;
-padding:12px;
-}
-
-.preview-icon{
-width:28px;
-height:28px;
-border-radius:6px;
-background:#dbeafe;
-margin-bottom:12px;
-}
-
-.preview-card-line{
-height:6px;
-background:#d1d5db;
-width:75%;
-margin-bottom:6px;
-border-radius:2px;
-}
-
-.chart{
-height:115px;
-background:#fff;
-border:1px solid #e5e7eb;
-border-radius:6px;
-display:flex;
-align-items:end;
-gap:8px;
-padding:18px;
-}
-
-.bar{
-flex:1;
-background:#2563eb;
-border-radius:3px 3px 0 0;
-}
-
-.bar:nth-child(1){height:35%}
-.bar:nth-child(2){height:55%}
-.bar:nth-child(3){height:42%}
-.bar:nth-child(4){height:75%}
-.bar:nth-child(5){height:62%}
-.bar:nth-child(6){height:88%}
-.bar:nth-child(7){height:70%}
 
 /* SECTIONS */
 
@@ -572,17 +451,17 @@ background:#fff;
 }
 
 .product-photo{
-  height:110px;
-  background:#f4f5f7;
-  overflow:hidden;
-  border-radius:8px 8px 0 0;
+height:110px;
+background:#f4f5f7;
+overflow:hidden;
+border-radius:8px 8px 0 0;
 }
 
 .product-photo img{
-  width:100%;
-  height:100%;
-  object-fit:cover;
-  display:block;
+width:100%;
+height:100%;
+object-fit:cover;
+display:block;
 }
 
 .product-info{
@@ -599,281 +478,157 @@ font-size:6px;
 color:#2563eb;
 }
 
-<!-- PROJECT 3 -->
+/* PROJECT 3 */
 
-<div class="project">
+.brand-project{
+background:#eeeae2;
+padding:18px;
+}
 
-  <div class="mockup">
+.brand-card{
+background:#faf9f6;
+border-radius:10px;
+overflow:hidden;
+}
 
-    <div class="browser">
+.brand-card img{
+width:100%;
+height:250px;
+object-fit:cover;
+display:block;
+}
 
-      <div class="browser-bar">
-        <span class="browser-dot"></span>
-        <span class="browser-dot"></span>
-        <span class="browser-dot"></span>
-      </div>
+.brand-content{
+padding:18px;
+}
 
-      <div style="
-        background:#eeeae2;
-        padding:18px;
-      ">
+.brand-header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+border-bottom:1px solid #ded8cd;
+padding-bottom:12px;
+margin-bottom:16px;
+}
 
-        <div style="
-          background:#ffffff;
-          border-radius:10px;
-          overflow:hidden;
-        ">
+.brand-name{
+font-family:Georgia,serif;
+font-size:20px;
+color:#25231f;
+letter-spacing:1px;
+}
 
-          <img
-            src="atelier-brand.jpg"
-            alt="A. Atelier brand identity project"
-            style="
-              width:100%;
-              height:280px;
-              object-fit:cover;
-              display:block;
-            "
-          >
+.brand-sub{
+font-size:6px;
+color:#8a8379;
+letter-spacing:2px;
+margin-top:4px;
+}
 
-          <div style="
-            padding:18px;
-            background:#faf9f6;
-          ">
+.brand-est{
+font-size:6px;
+color:#8a8379;
+letter-spacing:1px;
+}
 
-            <div style="
-              display:flex;
-              justify-content:space-between;
-              align-items:center;
-              margin-bottom:15px;
-            ">
+.brand-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:10px;
+}
 
-              <div>
+.brand-box{
+background:#ffffff;
+border:1px solid #e3ded5;
+border-radius:6px;
+padding:12px;
+}
 
-                <div style="
-                  font-family:Georgia,serif;
-                  font-size:20px;
-                  color:#25231f;
-                  letter-spacing:1px;
-                ">
-                  A. Atelier
-                </div>
+.brand-label{
+font-size:6px;
+color:#8a8379;
+letter-spacing:1px;
+margin-bottom:7px;
+}
 
-                <div style="
-                  font-size:6px;
-                  color:#8a8379;
-                  letter-spacing:2px;
-                  margin-top:4px;
-                ">
-                  LIFESTYLE BRAND IDENTITY
-                </div>
+.brand-mark{
+font-family:Georgia,serif;
+font-size:18px;
+color:#292722;
+}
 
-              </div>
+.brand-word{
+font-family:Georgia,serif;
+font-size:10px;
+color:#292722;
+margin-top:3px;
+}
 
-              <div style="
-                font-size:6px;
-                color:#8a8379;
-                letter-spacing:1px;
-              ">
-                EST. 2026
-              </div>
+.palette{
+display:flex;
+gap:5px;
+}
 
-            </div>
+.palette span{
+width:25px;
+height:25px;
+border-radius:4px;
+display:block;
+}
 
+.palette-1{
+background:#f4f1e8;
+border:1px solid #ddd6cc;
+}
 
-            <div style="
-              display:grid;
-              grid-template-columns:1fr 1fr;
-              gap:12px;
-            ">
+.palette-2{
+background:#b8a88a;
+}
 
-              <div style="
-                border:1px solid #e3ded5;
-                border-radius:6px;
-                padding:12px;
-                background:#ffffff;
-              ">
+.palette-3{
+background:#596157;
+}
 
-                <div style="
-                  font-size:6px;
-                  color:#8a8379;
-                  letter-spacing:1px;
-                  margin-bottom:7px;
-                ">
-                  LOGO & TYPOGRAPHY
-                </div>
+.palette-4{
+background:#24231f;
+}
 
-                <div style="
-                  font-family:Georgia,serif;
-                  font-size:18px;
-                  color:#292722;
-                ">
-                  A.
-                </div>
+.brand-direction{
+margin-top:10px;
+background:#24231f;
+border-radius:6px;
+padding:14px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
 
-                <div style="
-                  font-family:Georgia,serif;
-                  font-size:10px;
-                  color:#292722;
-                  margin-top:3px;
-                ">
-                  ATELIER
-                </div>
+.brand-direction-label{
+font-size:6px;
+color:#cfc8bc;
+letter-spacing:1px;
+margin-bottom:5px;
+}
 
-              </div>
+.brand-direction-text{
+font-family:Georgia,serif;
+font-size:12px;
+color:#f4f1e8;
+}
 
+.brand-symbol{
+width:38px;
+height:38px;
+border:1px solid #aaa08f;
+border-radius:5px;
+display:flex;
+align-items:center;
+justify-content:center;
+color:#f4f1e8;
+font-family:Georgia,serif;
+font-size:12px;
+}
 
-              <div style="
-                border:1px solid #e3ded5;
-                border-radius:6px;
-                padding:12px;
-                background:#ffffff;
-              ">
-
-                <div style="
-                  font-size:6px;
-                  color:#8a8379;
-                  letter-spacing:1px;
-                  margin-bottom:9px;
-                ">
-                  COLOUR PALETTE
-                </div>
-
-                <div style="
-                  display:flex;
-                  gap:5px;
-                ">
-
-                  <span style="
-                    width:25px;
-                    height:25px;
-                    border-radius:4px;
-                    background:#f4f1e8;
-                    border:1px solid #ddd6cc;
-                  "></span>
-
-                  <span style="
-                    width:25px;
-                    height:25px;
-                    border-radius:4px;
-                    background:#b8a88a;
-                  "></span>
-
-                  <span style="
-                    width:25px;
-                    height:25px;
-                    border-radius:4px;
-                    background:#596157;
-                  "></span>
-
-                  <span style="
-                    width:25px;
-                    height:25px;
-                    border-radius:4px;
-                    background:#24231f;
-                  "></span>
-
-                </div>
-
-              </div>
-
-            </div>
-
-
-            <div style="
-              margin-top:12px;
-              padding:12px;
-              border:1px solid #e3ded5;
-              border-radius:6px;
-              background:#ffffff;
-              display:flex;
-              justify-content:space-between;
-              align-items:center;
-            ">
-
-              <div>
-
-                <div style="
-                  font-size:6px;
-                  color:#8a8379;
-                  letter-spacing:1px;
-                  margin-bottom:4px;
-                ">
-                  BRAND DIRECTION
-                </div>
-
-                <div style="
-                  font-family:Georgia,serif;
-                  font-size:12px;
-                  color:#292722;
-                ">
-                  Refined. Minimal. Timeless.
-                </div>
-
-              </div>
-
-              <div style="
-                width:42px;
-                height:42px;
-                background:#24231f;
-                border-radius:6px;
-                display:flex;
-                align-items:center;
-                justify-content:center;
-                color:#f4f1e8;
-                font-family:Georgia,serif;
-                font-size:13px;
-              ">
-                A.
-              </div>
-
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </div>
-
-
-  <div class="project-info">
-
-    <h3>
-      Brand Identity System
-    </h3>
-
-    <p>
-      Premium visual identity concept featuring logo direction, typography, colour palette and brand presentation.
-    </p>
-
-    <div class="tags">
-
-      <span class="tag">
-        Brand Identity
-      </span>
-
-      <span class="tag">
-        Logo Design
-      </span>
-
-      <span class="tag">
-        Packaging
-      </span>
-
-      <span class="tag">
-        Visual Design
-      </span>
-
-    </div>
-
-  </div>
-
-</div>
-```
-  
 /* PROJECT 4 */
 
 .landing-site{
@@ -1179,6 +934,10 @@ grid-template-columns:1fr;
 grid-template-columns:1fr 1fr;
 }
 
+.brand-grid{
+grid-template-columns:1fr;
+}
+
 .footer-content{
 flex-direction:column;
 align-items:flex-start;
@@ -1255,72 +1014,17 @@ Start a Project
 
 
 <div class="hero-preview">
-  <img src="northline-business.jpg" alt="Northline business website preview" style="width:100%;height:100%;object-fit:cover;border-radius:12px;">
 
-  <div style="background:#ffffff;border-radius:18px;overflow:hidden;box-shadow:0 25px 60px rgba(15,35,60,.18);border:1px solid #e5e7eb;">
-
-    <div style="height:34px;background:#f3f4f6;display:flex;align-items:center;padding:0 14px;gap:7px;">
-      <span style="width:8px;height:8px;background:#ff6b6b;border-radius:50%;"></span>
-      <span style="width:8px;height:8px;background:#ffd166;border-radius:50%;"></span>
-      <span style="width:8px;height:8px;background:#06d6a0;border-radius:50%;"></span>
-      <span style="margin-left:12px;font-size:9px;color:#9ca3af;">northline-business.com</span>
-    </div>
-
-    <div style="padding:22px 24px 26px;">
-
-      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:28px;">
-        <strong style="font-size:15px;letter-spacing:1px;color:#10243e;">NORTHLINE</strong>
-
-        <div style="display:flex;gap:16px;">
-          <span style="width:35px;height:5px;background:#d8dee7;border-radius:4px;"></span>
-          <span style="width:35px;height:5px;background:#d8dee7;border-radius:4px;"></span>
-          <span style="width:35px;height:5px;background:#d8dee7;border-radius:4px;"></span>
-        </div>
-      </div>
-
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;align-items:center;">
-
-        <div>
-          <span style="font-size:9px;color:#0a875f;font-weight:700;letter-spacing:1px;">BUSINESS SOLUTIONS</span>
-
-          <h3 style="font-size:25px;line-height:1.12;color:#10243e;margin:9px 0 10px;">
-            Grow your business with confidence.
-          </h3>
-
-          <p style="font-size:10px;line-height:1.6;color:#7b8491;margin:0 0 16px;">
-            Strategic solutions and professional services for ambitious businesses.
-          </p>
-
-          <span style="display:inline-block;background:#10243e;color:white;padding:9px 15px;border-radius:5px;font-size:9px;font-weight:600;">
-            Get Started
-          </span>
-        </div>
-
-        
-      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:22px;">
-
-        <div style="background:#f5f7f9;padding:12px;border-radius:8px;">
-          <strong style="display:block;font-size:16px;color:#10243e;">24K</strong>
-          <span style="font-size:8px;color:#8993a0;">Visitors</span>
-        </div>
-
-        <div style="background:#f5f7f9;padding:12px;border-radius:8px;">
-          <strong style="display:block;font-size:16px;color:#10243e;">86%</strong>
-          <span style="font-size:8px;color:#8993a0;">Growth</span>
-        </div>
-
-        <div style="background:#f5f7f9;padding:12px;border-radius:8px;">
-          <strong style="display:block;font-size:16px;color:#10243e;">4.8</strong>
-          <span style="font-size:8px;color:#8993a0;">Rating</span>
-        </div>
-
-      </div>
-
-    </div>
-
-  </div>
+<img
+src="northline-business.jpg"
+alt="Northline business website preview"
+class="hero-image"
+>
 
 </div>
+
+</div>
+
 </section>
 
 
@@ -1432,7 +1136,6 @@ Self-initiated concept projects created to demonstrate different website and dig
 <span class="browser-dot"></span>
 </div>
 
-
 <div class="corporate-site">
 
 <div class="corp-nav">
@@ -1529,103 +1232,17 @@ Modern business website concept with professional navigation, hero section, real
 </p>
 
 <div class="tags">
+
 <span class="tag">Business Website</span>
 <span class="tag">Responsive Design</span>
 <span class="tag">UI/UX</span>
-</div>
 
 </div>
 
 </div>
-<div style="margin:0 22px 22px 22px;background:#f1f3f5;padding:14px;border-radius:14px;">
-
-  <div style="background:white;border-radius:10px;overflow:hidden;box-shadow:0 8px 25px rgba(0,0,0,.08);">
-
-    <div style="height:28px;background:#172033;display:flex;align-items:center;padding:0 10px;gap:5px;">
-      <span style="width:6px;height:6px;border-radius:50%;background:#ef4444;"></span>
-      <span style="width:6px;height:6px;border-radius:50%;background:#f59e0b;"></span>
-      <span style="width:6px;height:6px;border-radius:50%;background:#22c55e;"></span>
-    </div>
-
-    <div style="padding:18px;">
-
-      <div style="display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #e5e7eb;padding-bottom:12px;margin-bottom:18px;">
-
-        <strong style="font-size:13px;color:#172033;">
-          NORTHLINE
-        </strong>
-
-        <div style="display:flex;gap:10px;font-size:7px;color:#64748b;">
-          <span>Home</span>
-          <span>About</span>
-          <span>Services</span>
-          <span>Contact</span>
-        </div>
-
-      </div>
-
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:18px;align-items:center;">
-
-        <div>
-
-          <small style="font-size:7px;color:#2563eb;font-weight:700;letter-spacing:1px;">
-            BUSINESS SOLUTIONS
-          </small>
-
-          <h2 style="font-size:23px;line-height:1.05;color:#111827;margin:8px 0;">
-            Build a stronger business for tomorrow.
-          </h2>
-
-          <p style="font-size:8px;line-height:1.5;color:#6b7280;margin-bottom:12px;">
-            Professional solutions designed for modern businesses.
-          </p>
-
-          <span style="display:inline-block;background:#2563eb;color:white;padding:7px 11px;border-radius:4px;font-size:7px;">
-            Explore Services
-          </span>
-
-        </div>
-
-        <div style="height:155px;border-radius:8px;overflow:hidden;">
-          <img
-            src="northline-business.jpg"
-            alt="Northline business website project"
-            style="width:100%;height:100%;object-fit:cover;display:block;"
-          >
-        </div>
-
-      </div>
-
-      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:18px;">
-
-        <div style="border:1px solid #e5e7eb;padding:10px;border-radius:6px;">
-          <strong style="font-size:8px;">01 Strategy</strong>
-          <p style="font-size:6px;color:#6b7280;margin:4px 0 0;">
-            Smart business solutions.
-          </p>
-        </div>
-
-        <div style="border:1px solid #e5e7eb;padding:10px;border-radius:6px;">
-          <strong style="font-size:8px;">02 Digital</strong>
-          <p style="font-size:6px;color:#6b7280;margin:4px 0 0;">
-            Modern digital solutions.
-          </p>
-        </div>
-
-        <div style="border:1px solid #e5e7eb;padding:10px;border-radius:6px;">
-          <strong style="font-size:8px;">03 Consulting</strong>
-          <p style="font-size:6px;color:#6b7280;margin:4px 0 0;">
-            Professional guidance.
-          </p>
-        </div>
-
-      </div>
-
-    </div>
-
-  </div>
 
 </div>
+
 
 <!-- PROJECT 2 -->
 
@@ -1640,7 +1257,6 @@ Modern business website concept with professional navigation, hero section, real
 <span class="browser-dot"></span>
 <span class="browser-dot"></span>
 </div>
-
 
 <div class="store-site">
 
@@ -1666,18 +1282,24 @@ Modern essentials. Beautifully selected.
 <div class="store-desc">
 A clean e-commerce concept designed for a premium lifestyle store.
 </div>
-  <div style="margin-top:22px;margin-bottom:22px;">
-  <img src="northline-market.jpg"
-       alt="Northline Market e-commerce product showcase"
-       style="width:100%;height:240px;object-fit:cover;border-radius:14px;display:block;">
+
+<div style="margin:20px 0;">
+
+<img
+src="northline-market.jpg"
+alt="Northline Market e-commerce showcase"
+style="width:100%;height:200px;object-fit:cover;border-radius:10px;display:block;"
+>
+
 </div>
+
 
 <div class="store-products">
 
 <div class="product">
 
 <div class="product-photo">
-  <img src="northline-market.jpg" alt="Minimal Watch product">
+<img src="northline-market.jpg" alt="Minimal Watch product">
 </div>
 
 <div class="product-info">
@@ -1691,7 +1313,7 @@ A clean e-commerce concept designed for a premium lifestyle store.
 <div class="product">
 
 <div class="product-photo">
-  <img src="northline-market.jpg" alt="Wireless Audio product">
+<img src="northline-market.jpg" alt="Wireless Audio product">
 </div>
 
 <div class="product-info">
@@ -1705,7 +1327,7 @@ A clean e-commerce concept designed for a premium lifestyle store.
 <div class="product">
 
 <div class="product-photo">
-  <img src="northline-market.jpg" alt="Leather Wallet product">
+<img src="northline-market.jpg" alt="Leather Wallet product">
 </div>
 
 <div class="product-info">
@@ -1735,9 +1357,153 @@ Premium e-commerce concept featuring product cards, collection navigation and cl
 </p>
 
 <div class="tags">
+
 <span class="tag">E-Commerce</span>
 <span class="tag">Product UI</span>
 <span class="tag">Responsive Design</span>
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- PROJECT 3 -->
+
+<div class="project">
+
+<div class="mockup">
+
+<div class="browser">
+
+<div class="browser-bar">
+<span class="browser-dot"></span>
+<span class="browser-dot"></span>
+<span class="browser-dot"></span>
+</div>
+
+<div class="brand-project">
+
+<div class="brand-card">
+
+<img
+src="atelier-brand.jpg"
+alt="A. Atelier brand identity project"
+>
+
+<div class="brand-content">
+
+<div class="brand-header">
+
+<div>
+
+<div class="brand-name">
+A. Atelier
+</div>
+
+<div class="brand-sub">
+LIFESTYLE BRAND
+</div>
+
+</div>
+
+<div class="brand-est">
+EST. 2026
+</div>
+
+</div>
+
+
+<div class="brand-grid">
+
+<div class="brand-box">
+
+<div class="brand-label">
+LOGO SYSTEM
+</div>
+
+<div class="brand-mark">
+A.
+</div>
+
+<div class="brand-word">
+ATELIER
+</div>
+
+</div>
+
+
+<div class="brand-box">
+
+<div class="brand-label">
+COLOUR PALETTE
+</div>
+
+<div class="palette">
+
+<span class="palette-1"></span>
+<span class="palette-2"></span>
+<span class="palette-3"></span>
+<span class="palette-4"></span>
+
+</div>
+
+</div>
+
+</div>
+
+
+<div class="brand-direction">
+
+<div>
+
+<div class="brand-direction-label">
+BRAND DIRECTION
+</div>
+
+<div class="brand-direction-text">
+Refined. Minimal. Timeless.
+</div>
+
+</div>
+
+<div class="brand-symbol">
+A.
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+<div class="project-info">
+
+<h3>
+Brand Identity System
+</h3>
+
+<p>
+Premium visual identity concept featuring logo direction, typography, colour palette and brand presentation.
+</p>
+
+<div class="tags">
+
+<span class="tag">Brand Identity</span>
+<span class="tag">Logo Design</span>
+<span class="tag">Packaging</span>
+<span class="tag">Visual Design</span>
+
 </div>
 
 </div>
@@ -1822,9 +1588,11 @@ Clean landing page concept with strong typography, focused messaging and clear c
 </p>
 
 <div class="tags">
+
 <span class="tag">Landing Page</span>
 <span class="tag">UI Design</span>
 <span class="tag">Conversion</span>
+
 </div>
 
 </div>
