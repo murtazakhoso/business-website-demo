@@ -10,985 +10,1020 @@
 
 <style>
 
+/* =========================
+   GLOBAL
+========================= */
+
 *{
-margin:0;
-padding:0;
-box-sizing:border-box;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
 html{
-scroll-behavior:smooth;
+    scroll-behavior:smooth;
 }
 
 body{
-font-family:Arial,Helvetica,sans-serif;
-background:#f7f8fa;
-color:#172033;
-line-height:1.6;
+    font-family:Arial,Helvetica,sans-serif;
+    background:#f7f8fa;
+    color:#172033;
+    line-height:1.6;
 }
 
 a{
-text-decoration:none;
-color:inherit;
+    text-decoration:none;
+    color:inherit;
 }
 
 .container{
-width:min(1120px,92%);
-margin:auto;
+    width:min(1120px,92%);
+    margin:auto;
 }
 
-/* HEADER */
+
+/* =========================
+   HEADER
+========================= */
 
 header{
-background:#ffffff;
-border-bottom:1px solid #e7e9ed;
-position:sticky;
-top:0;
-z-index:100;
+    background:#ffffff;
+    border-bottom:1px solid #e7e9ed;
+    position:sticky;
+    top:0;
+    z-index:100;
 }
 
 .nav{
-height:76px;
-display:flex;
-align-items:center;
-justify-content:space-between;
+    height:76px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
 }
 
 .logo{
-font-size:23px;
-font-weight:800;
-letter-spacing:-1px;
+    font-size:23px;
+    font-weight:800;
+    letter-spacing:-1px;
 }
 
 .logo span{
-color:#2563eb;
+    color:#2563eb;
 }
 
 .nav-links{
-display:flex;
-gap:30px;
-align-items:center;
+    display:flex;
+    gap:30px;
+    align-items:center;
 }
 
 .nav-links a{
-font-size:14px;
-color:#596273;
-font-weight:600;
+    font-size:14px;
+    color:#596273;
+    font-weight:600;
 }
 
 .nav-links a:hover{
-color:#2563eb;
+    color:#2563eb;
 }
 
 .nav-button{
-background:#172033;
-color:#ffffff !important;
-padding:11px 18px;
-border-radius:6px;
+    background:#172033;
+    color:#ffffff !important;
+    padding:11px 18px;
+    border-radius:6px;
 }
 
-/* HERO */
+
+/* =========================
+   HERO
+========================= */
 
 .hero{
-padding:90px 0 80px;
-background:#ffffff;
+    padding:90px 0 80px;
+    background:#ffffff;
 }
 
 .hero-grid{
-display:grid;
-grid-template-columns:1.05fr .95fr;
-gap:65px;
-align-items:center;
+    display:grid;
+    grid-template-columns:1.05fr .95fr;
+    gap:65px;
+    align-items:center;
 }
 
 .badge{
-display:inline-block;
-background:#eef4ff;
-color:#2563eb;
-padding:8px 12px;
-border-radius:30px;
-font-size:11px;
-font-weight:800;
-letter-spacing:.8px;
-margin-bottom:22px;
+    display:inline-block;
+    background:#eef4ff;
+    color:#2563eb;
+    padding:8px 12px;
+    border-radius:30px;
+    font-size:11px;
+    font-weight:800;
+    letter-spacing:.8px;
+    margin-bottom:22px;
 }
 
 .hero h1{
-font-size:58px;
-line-height:1.03;
-letter-spacing:-2.5px;
-max-width:650px;
-margin-bottom:24px;
+    font-size:58px;
+    line-height:1.03;
+    letter-spacing:-2.5px;
+    max-width:650px;
+    margin-bottom:24px;
 }
 
 .hero-text{
-font-size:18px;
-color:#687386;
-max-width:570px;
-margin-bottom:32px;
+    font-size:18px;
+    color:#687386;
+    max-width:570px;
+    margin-bottom:32px;
 }
 
 .buttons{
-display:flex;
-gap:12px;
-flex-wrap:wrap;
+    display:flex;
+    gap:12px;
+    flex-wrap:wrap;
 }
 
 .btn{
-display:inline-block;
-padding:14px 22px;
-border-radius:6px;
-font-size:14px;
-font-weight:700;
+    display:inline-block;
+    padding:14px 22px;
+    border-radius:6px;
+    font-size:14px;
+    font-weight:700;
 }
 
 .btn-primary{
-background:#2563eb;
-color:#fff;
+    background:#2563eb;
+    color:#ffffff;
 }
 
 .btn-secondary{
-border:1px solid #d9dde5;
-background:#fff;
+    border:1px solid #d9dde5;
+    background:#ffffff;
 }
 
-/* HERO PREVIEW */
-
 .hero-preview{
-background:#172033;
-border-radius:16px;
-padding:14px;
-box-shadow:0 25px 60px rgba(20,30,50,.16);
+    background:#172033;
+    border-radius:16px;
+    padding:14px;
+    box-shadow:0 25px 60px rgba(20,30,50,.16);
 }
 
 .hero-image{
-width:100%;
-height:390px;
-object-fit:cover;
-display:block;
-border-radius:10px;
+    width:100%;
+    height:390px;
+    object-fit:cover;
+    display:block;
+    border-radius:10px;
 }
 
-/* SECTIONS */
+
+/* =========================
+   SECTIONS
+========================= */
 
 section{
-padding:90px 0;
+    padding:90px 0;
 }
 
 .section-heading{
-margin-bottom:42px;
+    margin-bottom:42px;
 }
 
 .section-label{
-font-size:11px;
-font-weight:800;
-letter-spacing:1.5px;
-color:#2563eb;
-margin-bottom:10px;
+    font-size:11px;
+    font-weight:800;
+    letter-spacing:1.5px;
+    color:#2563eb;
+    margin-bottom:10px;
 }
 
 .section-heading h2{
-font-size:40px;
-letter-spacing:-1.5px;
-margin-bottom:10px;
+    font-size:40px;
+    letter-spacing:-1.5px;
+    margin-bottom:10px;
 }
 
 .section-heading p{
-color:#697386;
-max-width:600px;
+    color:#697386;
+    max-width:600px;
 }
 
-/* SERVICES */
+
+/* =========================
+   SERVICES
+========================= */
 
 .services{
-background:#f7f8fa;
+    background:#f7f8fa;
 }
 
 .service-grid{
-display:grid;
-grid-template-columns:repeat(3,1fr);
-gap:18px;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:18px;
 }
 
 .service{
-background:#fff;
-border:1px solid #e5e7eb;
-border-radius:10px;
-padding:28px;
-transition:.2s;
+    background:#ffffff;
+    border:1px solid #e5e7eb;
+    border-radius:10px;
+    padding:28px;
+    transition:.2s;
 }
 
 .service:hover{
-transform:translateY(-3px);
-box-shadow:0 15px 35px rgba(20,30,50,.07);
+    transform:translateY(-3px);
+    box-shadow:0 15px 35px rgba(20,30,50,.07);
 }
 
 .service-number{
-font-size:12px;
-font-weight:800;
-color:#2563eb;
-margin-bottom:28px;
+    font-size:12px;
+    font-weight:800;
+    color:#2563eb;
+    margin-bottom:28px;
 }
 
 .service h3{
-font-size:19px;
-margin-bottom:9px;
+    font-size:19px;
+    margin-bottom:9px;
 }
 
 .service p{
-font-size:14px;
-color:#697386;
+    font-size:14px;
+    color:#697386;
 }
 
-/* PROJECTS */
+
+/* =========================
+   PROJECTS
+========================= */
 
 .projects{
-background:#ffffff;
+    background:#ffffff;
 }
 
 .project-grid{
-display:grid;
-grid-template-columns:repeat(2,1fr);
-gap:30px;
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:30px;
 }
 
 .project{
-background:#f8fafc;
-border:1px solid #e5e7eb;
-border-radius:12px;
-overflow:hidden;
+    background:#f8fafc;
+    border:1px solid #e5e7eb;
+    border-radius:12px;
+    overflow:hidden;
 }
 
 .mockup{
-padding:18px;
-background:#edf0f4;
+    padding:18px;
+    background:#edf0f4;
 }
 
 .browser{
-background:#fff;
-border-radius:8px;
-overflow:hidden;
-box-shadow:0 12px 30px rgba(20,30,50,.10);
+    background:#ffffff;
+    border-radius:8px;
+    overflow:hidden;
+    box-shadow:0 12px 30px rgba(20,30,50,.10);
 }
 
 .browser-bar{
-height:30px;
-background:#e8ebef;
-display:flex;
-align-items:center;
-gap:5px;
-padding:0 10px;
+    height:30px;
+    background:#e8ebef;
+    display:flex;
+    align-items:center;
+    gap:5px;
+    padding:0 10px;
 }
 
 .browser-dot{
-width:7px;
-height:7px;
-border-radius:50%;
-background:#9ca3af;
+    width:7px;
+    height:7px;
+    border-radius:50%;
+    background:#9ca3af;
 }
 
-/* PROJECT 1 */
+
+/* =========================
+   PROJECT 1
+   CORPORATE WEBSITE
+========================= */
 
 .corporate-site{
-background:#fff;
-font-family:Arial,sans-serif;
+    background:#ffffff;
+    font-family:Arial,sans-serif;
 }
 
 .corp-nav{
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:13px 16px;
-border-bottom:1px solid #e5e7eb;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:13px 16px;
+    border-bottom:1px solid #e5e7eb;
 }
 
 .corp-logo{
-font-size:13px;
-font-weight:800;
-color:#172033;
+    font-size:13px;
+    font-weight:800;
+    color:#172033;
 }
 
 .corp-links{
-display:flex;
-align-items:center;
-gap:10px;
+    display:flex;
+    align-items:center;
+    gap:10px;
 }
 
 .corp-links span{
-font-size:6px;
-color:#64748b;
+    font-size:6px;
+    color:#64748b;
 }
 
 .corp-btn{
-background:#2563eb;
-color:white;
-padding:5px 8px;
-border-radius:3px;
-font-size:6px;
+    background:#2563eb;
+    color:#ffffff;
+    padding:5px 8px;
+    border-radius:3px;
+    font-size:6px;
 }
 
 .corp-hero{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:12px;
-padding:18px 16px 12px;
-align-items:center;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:12px;
+    padding:18px 16px 12px;
+    align-items:center;
 }
 
 .corp-copy small{
-font-size:6px;
-color:#2563eb;
-font-weight:800;
-letter-spacing:1px;
+    font-size:6px;
+    color:#2563eb;
+    font-weight:800;
+    letter-spacing:1px;
 }
 
 .corp-copy h3{
-font-size:20px;
-line-height:1.05;
-margin:7px 0;
-color:#111827;
+    font-size:20px;
+    line-height:1.05;
+    margin:7px 0;
+    color:#111827;
 }
 
 .corp-copy p{
-font-size:6.5px;
-line-height:1.5;
-color:#6b7280;
-margin-bottom:9px;
+    font-size:6.5px;
+    line-height:1.5;
+    color:#6b7280;
+    margin-bottom:9px;
 }
 
 .corp-image{
-height:125px;
-border-radius:6px;
-overflow:hidden;
+    height:125px;
+    border-radius:6px;
+    overflow:hidden;
 }
 
 .corp-image img{
-width:100%;
-height:100%;
-object-fit:cover;
-display:block;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
 }
 
 .corp-cards{
-display:grid;
-grid-template-columns:repeat(3,1fr);
-gap:7px;
-padding:0 16px 16px;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:7px;
+    padding:0 16px 16px;
 }
 
 .corp-card{
-border:1px solid #e5e7eb;
-border-radius:4px;
-padding:9px;
+    border:1px solid #e5e7eb;
+    border-radius:4px;
+    padding:9px;
 }
 
 .corp-card strong{
-font-size:8px;
-display:block;
-margin-bottom:3px;
+    font-size:8px;
+    display:block;
+    margin-bottom:3px;
 }
 
 .corp-card span{
-font-size:5.5px;
-color:#6b7280;
+    font-size:5.5px;
+    color:#6b7280;
 }
 
-/* PROJECT 2 */
+
+/* =========================
+   PROJECT 2
+   ONLINE STORE
+========================= */
 
 .store-site{
-background:#fff;
-padding:16px;
-font-family:Arial,sans-serif;
+    background:#ffffff;
+    padding:16px;
+    font-family:Arial,sans-serif;
 }
 
 .store-nav{
-display:flex;
-justify-content:space-between;
-align-items:center;
-border-bottom:1px solid #e5e7eb;
-padding-bottom:10px;
-margin-bottom:14px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    border-bottom:1px solid #e5e7eb;
+    padding-bottom:10px;
+    margin-bottom:14px;
 }
 
 .store-logo{
-font-size:13px;
-font-weight:800;
+    font-size:13px;
+    font-weight:800;
 }
 
 .store-links{
-display:flex;
-gap:10px;
+    display:flex;
+    gap:10px;
 }
 
 .store-links span{
-font-size:6px;
-color:#64748b;
+    font-size:6px;
+    color:#64748b;
 }
 
 .store-title{
-font-size:20px;
-font-weight:800;
-margin-bottom:5px;
+    font-size:20px;
+    font-weight:800;
+    margin-bottom:5px;
 }
 
 .store-desc{
-font-size:7px;
-color:#6b7280;
-margin-bottom:13px;
+    font-size:7px;
+    color:#6b7280;
+    margin-bottom:13px;
+}
+
+.store-showcase{
+    margin:20px 0;
+}
+
+.store-showcase img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+    border-radius:10px;
+    display:block;
 }
 
 .store-products{
-display:grid;
-grid-template-columns:repeat(3,1fr);
-gap:8px;
-}
-
-.product{
-border:1px solid #e5e7eb;
-border-radius:5px;
-overflow:hidden;
-background:#fff;
-}
-
-.product-photo{
-height:110px;
-background:#f4f5f7;
-overflow:hidden;
-border-radius:8px 8px 0 0;
-}
-
-.product-photo img{
-width:100%;
-height:100%;
-object-fit:cover;
-display:block;
-}
-
-.product-info{
-padding:8px;
-}
-
-.product-info strong{
-font-size:7px;
-display:block;
-}
-
-.product-info span{
-font-size:6px;
-color:#2563eb;
-}
-
-/* PROJECT 3 */
-
-.brand-project{
-width:100%;
-background:#eeeae2;
-padding:18px;
-box-sizing:border-box;
-}
-
-.brand-card{
-width:100%;
-background:#faf9f6;
-border-radius:10px;
-overflow:hidden;
-}
-
-.brand-card img{
-width:100%;
-height:250px;
-object-fit:cover;
-display:block;
-}
-
-.brand-content{
-width:100%;
-padding:18px;
-box-sizing:border-box;
-}
-
-.brand-header{
-display:flex;
-justify-content:space-between;
-align-items:center;
-border-bottom:1px solid #ded8cd;
-padding-bottom:12px;
-margin-bottom:16px;
-}
-
-.brand-name{
-font-family:Georgia,serif;
-font-size:20px;
-color:#25231f;
-letter-spacing:1px;
-}
-
-.brand-sub{
-font-size:6px;
-color:#8a8379;
-letter-spacing:2px;
-margin-top:4px;
-}
-
-.brand-est{
-font-size:6px;
-color:#8a8379;
-letter-spacing:1px;
-}
-
-.brand-grid{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:10px;
-}
-
-.brand-box{
-background:#ffffff;
-border:1px solid #e3ded5;
-border-radius:6px;
-padding:12px;
-}
-
-.brand-label{
-font-size:6px;
-color:#8a8379;
-letter-spacing:1px;
-margin-bottom:7px;
-}
-
-.brand-mark{
-font-family:Georgia,serif;
-font-size:18px;
-color:#292722;
-}
-
-.brand-word{
-font-family:Georgia,serif;
-font-size:10px;
-color:#292722;
-margin-top:3px;
-}
-
-.palette{
-display:flex;
-gap:5px;
-}
-
-.palette span{
-width:25px;
-height:25px;
-border-radius:4px;
-display:block;
-}
-
-.palette-1{
-background:#f4f1e8;
-border:1px solid #ddd6cc;
-}
-
-.palette-2{
-background:#b8a88a;
-}
-
-.palette-3{
-background:#596157;
-}
-
-.palette-4{
-background:#24231f;
-}
-
-.brand-direction{
-margin-top:10px;
-background:#24231f;
-border-radius:6px;
-padding:14px;
-display:flex;
-justify-content:space-between;
-align-items:center;
-}
-
-.brand-direction-label{
-font-size:6px;
-color:#cfc8bc;
-letter-spacing:1px;
-margin-bottom:5px;
-}
-
-.brand-direction-text{
-font-family:Georgia,serif;
-font-size:12px;
-color:#f4f1e8;
-}
-
-.brand-symbol{
-width:38px;
-height:38px;
-border:1px solid #aaa08f;
-border-radius:5px;
-display:flex;
-align-items:center;
-justify-content:center;
-color:#f4f1e8;
-font-family:Georgia,serif;
-font-size:12px;
-}
-
-/* KEEP PROJECT 3 INFORMATION BELOW THE MOCKUP */
-
-.brand-project + .project-info{
-width:100%;
-box-sizing:border-box;
-margin-top:0;
-display:block;
-}
-
-/* RESPONSIVE */
-
-@media(max-width:768px){
-
-```
-.brand-project{
-    padding:12px;
-}
-
-.brand-grid{
-    grid-template-columns:1fr;
-}
-
-.brand-header{
-    flex-direction:column;
-    align-items:flex-start;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
     gap:8px;
 }
 
+.product{
+    border:1px solid #e5e7eb;
+    border-radius:5px;
+    overflow:hidden;
+    background:#ffffff;
+}
+
+.product-photo{
+    height:110px;
+    background:#f4f5f7;
+    overflow:hidden;
+    border-radius:8px 8px 0 0;
+}
+
+.product-photo img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+}
+
+.product-info{
+    padding:8px;
+}
+
+.product-info strong{
+    font-size:7px;
+    display:block;
+}
+
+.product-info span{
+    font-size:6px;
+    color:#2563eb;
+}
+
+
+/* =========================
+   PROJECT 3
+   BRAND IDENTITY
+========================= */
+
+.brand-project{
+    width:100%;
+    background:#eeeae2;
+    padding:18px;
+}
+
+.brand-card{
+    width:100%;
+    background:#faf9f6;
+    border-radius:10px;
+    overflow:hidden;
+}
+
 .brand-card img{
-    height:200px;
+    width:100%;
+    height:250px;
+    object-fit:cover;
+    display:block;
 }
 
-.brand-direction{
-    flex-direction:column;
-    align-items:flex-start;
-    gap:12px;
-}
-```
-
+.brand-content{
+    width:100%;
+    padding:18px;
 }
 
-/* PROJECT 4 */
-
-.landing-site{
-background:#fff;
-min-height:230px;
-font-family:Arial,sans-serif;
+.brand-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    border-bottom:1px solid #ded8cd;
+    padding-bottom:12px;
+    margin-bottom:16px;
 }
 
-.landing-nav{
-display:flex;
-justify-content:space-between;
-padding:13px 16px;
-border-bottom:1px solid #e5e7eb;
+.brand-name{
+    font-family:Georgia,serif;
+    font-size:20px;
+    color:#25231f;
+    letter-spacing:1px;
 }
 
-.landing-logo{
-font-size:12px;
-font-weight:800;
+.brand-sub{
+    font-size:6px;
+    color:#8a8379;
+    letter-spacing:2px;
+    margin-top:4px;
 }
 
-.landing-menu{
-font-size:6px;
-color:#64748b;
-}
-
-.landing-content{
-padding:24px 18px;
-text-align:center;
-}
-
-.landing-content small{
-font-size:6px;
-color:#2563eb;
-font-weight:800;
-letter-spacing:1px;
-}
-
-.landing-content h3{
-font-size:24px;
-line-height:1;
-margin:8px auto;
-max-width:320px;
-}
-
-.landing-content p{
-font-size:7px;
-color:#6b7280;
-max-width:270px;
-margin:0 auto 12px;
-}
-
-.landing-button{
-display:inline-block;
-background:#172033;
-color:#fff;
-padding:7px 12px;
-border-radius:4px;
-font-size:6px;
-}
-
-.landing-blocks{
-display:flex;
-justify-content:center;
-gap:7px;
-margin-top:17px;
-}
-
-.landing-block{
-width:55px;
-height:25px;
-background:#eef2f7;
-border-radius:4px;
-}
-
-/* PROJECT INFO */
-
-.project-info{
-padding:22px;
-background:#fff;
-}
-
-.project-info h3{
-font-size:21px;
-margin-bottom:7px;
-}
-
-.project-info p{
-font-size:13px;
-color:#697386;
-margin-bottom:14px;
-}
-
-.tags{
-display:flex;
-gap:7px;
-flex-wrap:wrap;
-}
-
-.tag{
-font-size:10px;
-font-weight:700;
-background:#eef4ff;
-color:#2563eb;
-padding:6px 9px;
-border-radius:20px;
-}
-
-/* ABOUT */
-
-.about{
-background:#f7f8fa;
-}
-
-.about-grid{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:60px;
-align-items:center;
-}
-
-.about h2{
-font-size:40px;
-line-height:1.1;
-margin-bottom:20px;
-}
-
-.about p{
-color:#697386;
-font-size:16px;
-margin-bottom:16px;
-}
-
-.skills{
-display:flex;
-flex-wrap:wrap;
-gap:9px;
-}
-
-.skill{
-background:#fff;
-border:1px solid #e2e6ec;
-padding:10px 13px;
-border-radius:6px;
-font-size:12px;
-font-weight:700;
-}
-
-/* PROCESS */
-
-.process{
-background:#fff;
-}
-
-.process-grid{
-display:grid;
-grid-template-columns:repeat(4,1fr);
-gap:18px;
-}
-
-.process-item{
-border-top:2px solid #172033;
-padding-top:20px;
-}
-
-.process-number{
-font-size:12px;
-color:#2563eb;
-font-weight:800;
-margin-bottom:18px;
-}
-
-.process-item h3{
-font-size:18px;
-margin-bottom:8px;
-}
-
-.process-item p{
-font-size:13px;
-color:#697386;
-}
-
-/* CTA */
-
-.cta{
-background:#172033;
-color:white;
-text-align:center;
-padding:80px 20px;
-}
-
-.cta h2{
-font-size:42px;
-letter-spacing:-1.5px;
-margin-bottom:14px;
-}
-
-.cta p{
-color:#b8c0cd;
-margin-bottom:28px;
-}
-
-.cta .btn-secondary{
-background:transparent;
-border:1px solid #526075;
-color:#fff;
-}
-
-/* FOOTER */
-
-footer{
-background:#111827;
-color:#9ca3af;
-padding:28px 0;
-}
-
-.footer-content{
-display:flex;
-justify-content:space-between;
-align-items:center;
-gap:20px;
-}
-
-.footer-brand{
-color:#fff;
-font-weight:800;
-}
-
-.footer-text{
-font-size:12px;
-}
-
-/* RESPONSIVE */
-
-@media(max-width:900px){
-
-.hero-grid,
-.about-grid{
-grid-template-columns:1fr;
-}
-
-.hero h1{
-font-size:46px;
-}
-
-.service-grid{
-grid-template-columns:repeat(2,1fr);
-}
-
-.project-grid{
-grid-template-columns:1fr;
-}
-
-.process-grid{
-grid-template-columns:repeat(2,1fr);
-}
-
-}
-
-@media(max-width:650px){
-
-.nav-links{
-display:none;
-}
-
-.hero{
-padding:60px 0;
-}
-
-.hero h1{
-font-size:38px;
-letter-spacing:-1.5px;
-}
-
-.hero-text{
-font-size:16px;
-}
-
-.service-grid{
-grid-template-columns:1fr;
-}
-
-.process-grid{
-grid-template-columns:1fr;
-}
-
-.about h2{
-font-size:32px;
-}
-
-.section-heading h2{
-font-size:32px;
-}
-
-.corp-links{
-display:none;
-}
-
-.corp-hero{
-grid-template-columns:1fr;
-}
-
-.store-products{
-grid-template-columns:1fr 1fr;
+.brand-est{
+    font-size:6px;
+    color:#8a8379;
+    letter-spacing:1px;
 }
 
 .brand-grid{
-grid-template-columns:1fr;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:10px;
+}
+
+.brand-box{
+    background:#ffffff;
+    border:1px solid #e3ded5;
+    border-radius:6px;
+    padding:12px;
+}
+
+.brand-label{
+    font-size:6px;
+    color:#8a8379;
+    letter-spacing:1px;
+    margin-bottom:7px;
+}
+
+.brand-mark{
+    font-family:Georgia,serif;
+    font-size:18px;
+    color:#292722;
+}
+
+.brand-word{
+    font-family:Georgia,serif;
+    font-size:10px;
+    color:#292722;
+    margin-top:3px;
+}
+
+.palette{
+    display:flex;
+    gap:5px;
+}
+
+.palette span{
+    width:25px;
+    height:25px;
+    border-radius:4px;
+    display:block;
+}
+
+.palette-1{
+    background:#f4f1e8;
+    border:1px solid #ddd6cc;
+}
+
+.palette-2{
+    background:#b8a88a;
+}
+
+.palette-3{
+    background:#596157;
+}
+
+.palette-4{
+    background:#24231f;
+}
+
+.brand-direction{
+    margin-top:10px;
+    background:#24231f;
+    border-radius:6px;
+    padding:14px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.brand-direction-label{
+    font-size:6px;
+    color:#cfc8bc;
+    letter-spacing:1px;
+    margin-bottom:5px;
+}
+
+.brand-direction-text{
+    font-family:Georgia,serif;
+    font-size:12px;
+    color:#f4f1e8;
+}
+
+.brand-symbol{
+    width:38px;
+    height:38px;
+    border:1px solid #aaa08f;
+    border-radius:5px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:#f4f1e8;
+    font-family:Georgia,serif;
+    font-size:12px;
+}
+
+
+/* =========================
+   PROJECT 4
+   LANDING PAGE
+========================= */
+
+.landing-site{
+    background:#ffffff;
+    min-height:230px;
+    font-family:Arial,sans-serif;
+}
+
+.landing-nav{
+    display:flex;
+    justify-content:space-between;
+    padding:13px 16px;
+    border-bottom:1px solid #e5e7eb;
+}
+
+.landing-logo{
+    font-size:12px;
+    font-weight:800;
+}
+
+.landing-menu{
+    font-size:6px;
+    color:#64748b;
+}
+
+.landing-content{
+    padding:24px 18px;
+    text-align:center;
+}
+
+.landing-content small{
+    font-size:6px;
+    color:#2563eb;
+    font-weight:800;
+    letter-spacing:1px;
+}
+
+.landing-content h3{
+    font-size:24px;
+    line-height:1;
+    margin:8px auto;
+    max-width:320px;
+}
+
+.landing-content p{
+    font-size:7px;
+    color:#6b7280;
+    max-width:270px;
+    margin:0 auto 12px;
+}
+
+.landing-button{
+    display:inline-block;
+    background:#172033;
+    color:#ffffff;
+    padding:7px 12px;
+    border-radius:4px;
+    font-size:6px;
+}
+
+.landing-blocks{
+    display:flex;
+    justify-content:center;
+    gap:7px;
+    margin-top:17px;
+}
+
+.landing-block{
+    width:55px;
+    height:25px;
+    background:#eef2f7;
+    border-radius:4px;
+}
+
+
+/* =========================
+   PROJECT INFO
+========================= */
+
+.project-info{
+    padding:22px;
+    background:#ffffff;
+}
+
+.project-info h3{
+    font-size:21px;
+    margin-bottom:7px;
+}
+
+.project-info p{
+    font-size:13px;
+    color:#697386;
+    margin-bottom:14px;
+}
+
+.tags{
+    display:flex;
+    gap:7px;
+    flex-wrap:wrap;
+}
+
+.tag{
+    font-size:10px;
+    font-weight:700;
+    background:#eef4ff;
+    color:#2563eb;
+    padding:6px 9px;
+    border-radius:20px;
+}
+
+
+/* =========================
+   ABOUT
+========================= */
+
+.about{
+    background:#f7f8fa;
+}
+
+.about-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:60px;
+    align-items:center;
+}
+
+.about h2{
+    font-size:40px;
+    line-height:1.1;
+    margin-bottom:20px;
+}
+
+.about p{
+    color:#697386;
+    font-size:16px;
+    margin-bottom:16px;
+}
+
+.skills{
+    display:flex;
+    flex-wrap:wrap;
+    gap:9px;
+}
+
+.skill{
+    background:#ffffff;
+    border:1px solid #e2e6ec;
+    padding:10px 13px;
+    border-radius:6px;
+    font-size:12px;
+    font-weight:700;
+}
+
+
+/* =========================
+   PROCESS
+========================= */
+
+.process{
+    background:#ffffff;
+}
+
+.process-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:18px;
+}
+
+.process-item{
+    border-top:2px solid #172033;
+    padding-top:20px;
+}
+
+.process-number{
+    font-size:12px;
+    color:#2563eb;
+    font-weight:800;
+    margin-bottom:18px;
+}
+
+.process-item h3{
+    font-size:18px;
+    margin-bottom:8px;
+}
+
+.process-item p{
+    font-size:13px;
+    color:#697386;
+}
+
+
+/* =========================
+   CTA
+========================= */
+
+.cta{
+    background:#172033;
+    color:#ffffff;
+    text-align:center;
+    padding:80px 20px;
+}
+
+.cta h2{
+    font-size:42px;
+    letter-spacing:-1.5px;
+    margin-bottom:14px;
+}
+
+.cta p{
+    color:#b8c0cd;
+    margin-bottom:28px;
+}
+
+.cta .btn-secondary{
+    background:transparent;
+    border:1px solid #526075;
+    color:#ffffff;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+    background:#111827;
+    color:#9ca3af;
+    padding:28px 0;
 }
 
 .footer-content{
-flex-direction:column;
-align-items:flex-start;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:20px;
 }
 
+.footer-brand{
+    color:#ffffff;
+    font-weight:800;
+}
+
+.footer-text{
+    font-size:12px;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width:900px){
+
+    .hero-grid,
+    .about-grid{
+        grid-template-columns:1fr;
+    }
+
+    .hero h1{
+        font-size:46px;
+    }
+
+    .service-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .project-grid{
+        grid-template-columns:1fr;
+    }
+
+    .process-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+}
+
+
+@media(max-width:650px){
+
+    .nav-links{
+        display:none;
+    }
+
+    .hero{
+        padding:60px 0;
+    }
+
+    .hero h1{
+        font-size:38px;
+        letter-spacing:-1.5px;
+    }
+
+    .hero-text{
+        font-size:16px;
+    }
+
+    .service-grid{
+        grid-template-columns:1fr;
+    }
+
+    .process-grid{
+        grid-template-columns:1fr;
+    }
+
+    .about h2{
+        font-size:32px;
+    }
+
+    .section-heading h2{
+        font-size:32px;
+    }
+
+    .corp-links{
+        display:none;
+    }
+
+    .corp-hero{
+        grid-template-columns:1fr;
+    }
+
+    .store-products{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .brand-grid{
+        grid-template-columns:1fr;
+    }
+
+    .brand-header{
+        flex-direction:column;
+        align-items:flex-start;
+        gap:8px;
+    }
+
+    .brand-direction{
+        flex-direction:column;
+        align-items:flex-start;
+        gap:12px;
+    }
+
+    .brand-card img{
+        height:200px;
+    }
+
+    .footer-content{
+        flex-direction:column;
+        align-items:flex-start;
+    }
 }
 
 </style>
@@ -996,7 +1031,10 @@ align-items:flex-start;
 
 <body>
 
-<!-- HEADER -->
+
+<!-- =========================
+     HEADER
+========================= -->
 
 <header>
 
@@ -1024,7 +1062,9 @@ Let's Talk
 </header>
 
 
-<!-- HERO -->
+<!-- =========================
+     HERO
+========================= -->
 
 <section class="hero">
 
@@ -1074,7 +1114,9 @@ class="hero-image"
 </section>
 
 
-<!-- SERVICES -->
+<!-- =========================
+     SERVICES
+========================= -->
 
 <section class="services" id="services">
 
@@ -1142,7 +1184,9 @@ Professional digital design and website solutions for businesses, brands and onl
 </section>
 
 
-<!-- PROJECTS -->
+<!-- =========================
+     PROJECTS
+========================= -->
 
 <section class="projects" id="projects">
 
@@ -1168,7 +1212,9 @@ Self-initiated concept projects created to demonstrate different website and dig
 <div class="project-grid">
 
 
-<!-- PROJECT 1 -->
+<!-- =========================
+     PROJECT 1
+========================= -->
 
 <div class="project">
 
@@ -1290,7 +1336,9 @@ Modern business website concept with professional navigation, hero section, real
 </div>
 
 
-<!-- PROJECT 1 -->
+<!-- =========================
+     PROJECT 2
+========================= -->
 
 <div class="project">
 
@@ -1304,77 +1352,121 @@ Modern business website concept with professional navigation, hero section, real
 <span class="browser-dot"></span>
 </div>
 
-<div class="corporate-site">
+<div class="store-site">
 
-<div class="corp-nav">
+<div class="store-nav">
 
-<div class="corp-logo">
-NORTHLINE
+<div class="store-logo">
+NORTHLINE MARKET
 </div>
 
-<div class="corp-links">
-<span>Home</span>
+<div class="store-links">
+<span>Shop</span>
+<span>Collections</span>
 <span>About</span>
-<span>Services</span>
-<span>Contact</span>
-<span class="corp-btn">Get Started</span>
+<span>Cart</span>
 </div>
 
 </div>
 
-<div class="corp-hero">
-
-<div class="corp-copy">
-
-<small>
-BUSINESS SOLUTIONS
-</small>
-
-<h3>
-Build a stronger business for tomorrow.
-</h3>
-
-<p>
-Professional solutions designed to help modern businesses grow, communicate and perform better.
-</p>
-
-<span class="corp-btn">
-Explore Services
-</span>
-
+<div class="store-title">
+Modern essentials. Beautifully selected.
 </div>
 
-<div class="corp-image">
+<div class="store-desc">
+A clean e-commerce concept designed for a premium lifestyle store.
+</div>
+
+
+<div class="store-showcase">
 
 <img
-src="northline-business.jpg"
-alt="Northline Business Solutions website concept"
-
+src="northline-market.jpg"
+alt="Northline Market e-commerce showcase"
 >
 
 </div>
 
-</div>
 
-<div class="corp-cards">
+<div class="store-products">
 
-<div class="corp-card">
-<strong>01 Strategy</strong>
-<span>Smart solutions for business growth.</span>
-</div>
+<div class="product">
 
-<div class="corp-card">
-<strong>02 Digital</strong>
-<span>Modern digital solutions for companies.</span>
-</div>
+<div class="product-photo">
 
-<div class="corp-card">
-<strong>03 Consulting</strong>
-<span>Professional expert guidance.</span>
-</div>
+<img
+src="northline-market.jpg"
+alt="Minimal Watch product"
+>
 
 </div>
 
+<div class="product-info">
+
+<strong>
+Minimal Watch
+</strong>
+
+<span>
+$129
+</span>
+
+</div>
+
+</div>
+
+
+<div class="product">
+
+<div class="product-photo">
+
+<img
+src="northline-market.jpg"
+alt="Wireless Audio product"
+>
+
+</div>
+
+<div class="product-info">
+
+<strong>
+Wireless Audio
+</strong>
+
+<span>
+$89
+</span>
+
+</div>
+
+</div>
+
+
+<div class="product">
+
+<div class="product-photo">
+
+<img
+src="northline-market.jpg"
+alt="Leather Wallet product"
+>
+
+</div>
+
+<div class="product-info">
+
+<strong>
+Leather Wallet
+</strong>
+
+<span>
+$59
+</span>
+
+</div>
+
+</div>
+
 </div>
 
 </div>
@@ -1382,20 +1474,23 @@ alt="Northline Business Solutions website concept"
 </div>
 
 </div>
+
 
 <div class="project-info">
 
 <h3>
-Corporate Business Website
+Modern Online Store
 </h3>
 
 <p>
-Modern business website concept with professional navigation, hero section, real business photography and service cards.
+Premium e-commerce concept featuring product cards, collection navigation and clean shopping interface.
 </p>
 
 <div class="tags">
 
-<span class="tag">Business Website</span> <span class="tag">Responsive Design</span> <span class="tag">UI/UX</span>
+<span class="tag">E-Commerce</span>
+<span class="tag">Product UI</span>
+<span class="tag">Responsive Design</span>
 
 </div>
 
@@ -1403,7 +1498,10 @@ Modern business website concept with professional navigation, hero section, real
 
 </div>
 
-<!-- PROJECT 3 -->
+
+<!-- =========================
+     PROJECT 3
+========================= -->
 
 <div class="project">
 
@@ -1416,6 +1514,7 @@ Modern business website concept with professional navigation, hero section, real
 <span class="browser-dot"></span>
 <span class="browser-dot"></span>
 </div>
+
 
 <div class="brand-project">
 
@@ -1426,7 +1525,9 @@ src="atelier-brand.jpg"
 alt="A. Atelier brand identity project"
 >
 
+
 <div class="brand-content">
+
 
 <div class="brand-header">
 
@@ -1508,7 +1609,6 @@ A.
 
 </div>
 
-</div>
 
 </div>
 
@@ -1545,7 +1645,9 @@ Premium visual identity concept featuring logo direction, typography, colour pal
 </div>
 
 
-<!-- PROJECT 4 -->
+<!-- =========================
+     PROJECT 4
+========================= -->
 
 <div class="project">
 
@@ -1641,7 +1743,9 @@ Clean landing page concept with strong typography, focused messaging and clear c
 </section>
 
 
-<!-- ABOUT -->
+<!-- =========================
+     ABOUT
+========================= -->
 
 <section class="about" id="about">
 
@@ -1693,7 +1797,9 @@ My work combines website design, responsive layouts, front-end skills and graphi
 </section>
 
 
-<!-- PROCESS -->
+<!-- =========================
+     PROCESS
+========================= -->
 
 <section class="process" id="process">
 
@@ -1792,7 +1898,9 @@ Review the details, improve the experience and prepare the final result.
 </section>
 
 
-<!-- CTA -->
+<!-- =========================
+     CTA
+========================= -->
 
 <section class="cta">
 
@@ -1823,7 +1931,9 @@ View Projects
 </section>
 
 
-<!-- FOOTER -->
+<!-- =========================
+     FOOTER
+========================= -->
 
 <footer>
 
@@ -1840,6 +1950,7 @@ Murtaza Khoso
 </div>
 
 </footer>
+
 
 </body>
 </html>
