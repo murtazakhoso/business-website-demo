@@ -3,13 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Murtaza Khoso — Web & Graphic Designer</title>
-
-<meta name="description" content="Professional web design and graphic design portfolio by Murtaza Khoso. Business websites, e-commerce, WordPress-style websites, landing pages and brand identity.">
+<title>Murtaza Khoso | Web & Graphic Designer</title>
 
 <style>
-
 *{
     margin:0;
     padding:0;
@@ -22,14 +18,9 @@ html{
 
 body{
     font-family:Arial, Helvetica, sans-serif;
-    background:#f5f7f6;
-    color:#14221d;
+    background:#f5f7fa;
+    color:#111827;
     line-height:1.6;
-}
-
-a{
-    text-decoration:none;
-    color:inherit;
 }
 
 .container{
@@ -38,79 +29,75 @@ a{
     margin:auto;
 }
 
-/* ================= HEADER ================= */
+/* HEADER */
 
 header{
     background:#ffffff;
-    border-bottom:1px solid #e7ebe9;
+    border-bottom:1px solid #e5e7eb;
     position:sticky;
     top:0;
-    z-index:1000;
+    z-index:100;
 }
 
 .nav{
-    min-height:76px;
+    height:76px;
     display:flex;
     align-items:center;
     justify-content:space-between;
 }
 
 .logo{
-    font-size:23px;
+    font-size:25px;
     font-weight:800;
-    letter-spacing:-1px;
+    color:#111827;
 }
 
 .logo span{
-    color:#0a875f;
+    color:#2563eb;
 }
 
-nav ul{
-    list-style:none;
+nav{
     display:flex;
     gap:30px;
+    align-items:center;
 }
 
 nav a{
+    text-decoration:none;
+    color:#4b5563;
     font-size:14px;
     font-weight:600;
-    color:#50605a;
-    transition:.3s;
 }
 
 nav a:hover{
-    color:#0a875f;
+    color:#2563eb;
 }
 
 .nav-btn{
-    background:#0a875f;
-    color:white;
+    background:#111827;
+    color:#fff !important;
     padding:11px 19px;
     border-radius:7px;
-    font-size:13px;
-    font-weight:700;
 }
 
-/* ================= HERO ================= */
+/* HERO */
 
 .hero{
-    padding:90px 0 85px;
-    background:
-    radial-gradient(circle at 80% 20%, #dff4ea 0, transparent 30%),
-    #f5f7f6;
+    padding:90px 0;
+    background:#ffffff;
 }
 
 .hero-grid{
     display:grid;
     grid-template-columns:1fr 1fr;
-    gap:70px;
+    gap:60px;
     align-items:center;
 }
 
 .badge{
     display:inline-block;
-    background:#e1f3eb;
-    color:#08734f;
+    background:#eff6ff;
+    color:#2563eb;
     padding:8px 13px;
     border-radius:30px;
     font-size:12px;
@@ -119,600 +106,584 @@ nav a:hover{
 }
 
 .hero h1{
-    font-size:58px;
-    line-height:1.04;
-    letter-spacing:-3px;
+    font-size:55px;
+    line-height:1.08;
+    letter-spacing:-2px;
     margin-bottom:22px;
 }
 
-.hero h1 span{
-    color:#0a875f;
-}
-
 .hero p{
-    color:#64716c;
-    max-width:520px;
-    font-size:17px;
+    font-size:18px;
+    color:#6b7280;
+    max-width:550px;
     margin-bottom:30px;
 }
 
-.hero-buttons{
+.buttons{
     display:flex;
-    gap:13px;
-    flex-wrap:wrap;
+    gap:14px;
 }
 
 .btn{
     display:inline-block;
+    text-decoration:none;
     padding:14px 22px;
     border-radius:7px;
-    font-size:14px;
     font-weight:700;
 }
 
 .btn-primary{
-    background:#0a875f;
-    color:#fff;
+    background:#2563eb;
+    color:white;
 }
 
 .btn-secondary{
-    border:1px solid #d4ddd9;
-    background:#fff;
+    background:#f3f4f6;
+    color:#111827;
 }
 
-/* HERO VISUAL */
+/* HERO DASHBOARD */
 
-.hero-preview{
-    background:#13251f;
+.dashboard{
+    background:#111827;
     border-radius:18px;
     padding:18px;
-    box-shadow:0 25px 70px rgba(19,37,31,.18);
-    transform:rotate(1deg);
+    box-shadow:0 25px 60px rgba(0,0,0,.15);
 }
 
-.preview-top{
-    height:35px;
+.dashboard-top{
     display:flex;
-    align-items:center;
     gap:7px;
-    padding:0 5px 12px;
+    margin-bottom:18px;
 }
 
 .dot{
-    width:8px;
-    height:8px;
+    width:9px;
+    height:9px;
+    background:#6b7280;
     border-radius:50%;
-    background:#70827b;
 }
 
-.preview-window{
-    background:#f7faf8;
+.dashboard-screen{
+    background:#f8fafc;
     border-radius:10px;
-    min-height:390px;
-    overflow:hidden;
+    padding:22px;
+}
+
+.dash-nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:25px;
+}
+
+.dash-logo{
+    font-size:16px;
+    font-weight:800;
+}
+
+.dash-menu{
+    display:flex;
+    gap:8px;
+}
+
+.dash-menu span{
+    width:35px;
+    height:6px;
+    background:#d1d5db;
+    border-radius:5px;
+}
+
+.dash-hero{
     display:grid;
-    grid-template-columns:105px 1fr;
+    grid-template-columns:1.3fr 1fr;
+    gap:20px;
+    margin-bottom:20px;
 }
 
-.preview-sidebar{
-    background:#18372e;
-    padding:22px 13px;
+.dash-copy h3{
+    font-size:25px;
+    line-height:1.1;
+    margin-bottom:10px;
 }
 
-.preview-logo{
-    color:white;
+.dash-copy p{
     font-size:11px;
-    font-weight:800;
-    margin-bottom:30px;
+    color:#6b7280;
 }
 
-.side-line{
-    height:7px;
-    background:#537269;
-    border-radius:4px;
-    margin-bottom:13px;
+.dash-image{
+    background:linear-gradient(135deg,#2563eb,#60a5fa);
+    min-height:130px;
+    border-radius:10px;
+    position:relative;
+    overflow:hidden;
 }
 
-.side-line.active{
-    background:#53c99c;
+.dash-image:after{
+    content:"";
+    position:absolute;
+    width:90px;
+    height:90px;
+    background:rgba(255,255,255,.25);
+    border-radius:50%;
+    right:20px;
+    top:20px;
 }
 
-.preview-content{
-    padding:25px;
-}
-
-.preview-title{
-    font-size:22px;
-    font-weight:800;
-    margin-bottom:5px;
-}
-
-.preview-sub{
-    color:#8a9691;
-    font-size:10px;
-    margin-bottom:22px;
-}
-
-.stats{
+.dash-cards{
     display:grid;
     grid-template-columns:repeat(3,1fr);
     gap:10px;
-    margin-bottom:22px;
 }
 
-.stat{
+.dash-card{
     background:#fff;
-    border:1px solid #e7ece9;
+    padding:14px;
     border-radius:8px;
-    padding:13px;
+    border:1px solid #e5e7eb;
 }
 
-.stat strong{
+.dash-card strong{
     display:block;
     font-size:17px;
 }
 
-.stat small{
-    color:#89938f;
-    font-size:8px;
+.dash-card small{
+    color:#9ca3af;
+    font-size:9px;
 }
 
-.chart{
-    background:#fff;
-    border:1px solid #e7ece9;
-    border-radius:9px;
-    height:160px;
-    padding:20px;
-    display:flex;
-    align-items:end;
-    gap:8px;
-}
-
-.bar{
-    flex:1;
-    background:#1eae7d;
-    border-radius:4px 4px 0 0;
-}
-
-.b1{height:35%;}
-.b2{height:50%;}
-.b3{height:42%;}
-.b4{height:68%;}
-.b5{height:57%;}
-.b6{height:82%;}
-.b7{height:72%;}
-
-/* ================= SECTIONS ================= */
+/* SECTION */
 
 section{
     padding:90px 0;
 }
 
-.section-heading{
-    max-width:650px;
+.section-head{
     margin-bottom:45px;
 }
 
-.eyebrow{
-    color:#0a875f;
+.section-head span{
+    color:#2563eb;
     font-size:12px;
     font-weight:800;
-    text-transform:uppercase;
-    letter-spacing:2px;
-    margin-bottom:10px;
+    letter-spacing:1px;
 }
 
-.section-heading h2{
+.section-head h2{
     font-size:40px;
-    line-height:1.15;
-    letter-spacing:-1.5px;
-    margin-bottom:13px;
+    margin-top:8px;
 }
 
-.section-heading p{
-    color:#68756f;
+.section-head p{
+    color:#6b7280;
+    margin-top:10px;
 }
 
-/* ================= SERVICES ================= */
+/* SERVICES */
 
 .services{
-    background:#fff;
-}
-
-.service-grid{
     display:grid;
     grid-template-columns:repeat(3,1fr);
     gap:20px;
 }
 
 .service{
-    background:#f7f9f8;
-    border:1px solid #e6ebe8;
+    background:white;
     padding:30px;
+    border:1px solid #e5e7eb;
     border-radius:12px;
-    transition:.3s;
-}
-
-.service:hover{
-    transform:translateY(-5px);
-    box-shadow:0 15px 35px rgba(0,0,0,.07);
 }
 
 .service-number{
-    width:38px;
-    height:38px;
-    border-radius:9px;
-    background:#dff3ea;
-    color:#08734f;
-    display:flex;
-    align-items:center;
-    justify-content:center;
+    color:#2563eb;
     font-weight:800;
-    margin-bottom:22px;
+    font-size:13px;
 }
 
 .service h3{
-    margin-bottom:9px;
-    font-size:20px;
+    margin:12px 0 8px;
 }
 
 .service p{
-    color:#6b7772;
+    color:#6b7280;
     font-size:14px;
 }
 
-/* ================= PROJECTS ================= */
+/* PROJECTS */
 
 .projects{
-    background:#f5f7f6;
-}
-
-.project-grid{
     display:grid;
     grid-template-columns:1fr 1fr;
-    gap:28px;
+    gap:35px;
 }
 
 .project{
-    background:#fff;
-    border:1px solid #e2e8e5;
+    background:white;
+    border:1px solid #e5e7eb;
     border-radius:15px;
     overflow:hidden;
-    box-shadow:0 8px 25px rgba(0,0,0,.04);
 }
 
-.project-visual{
-    height:350px;
-    padding:18px;
-    background:#e9efec;
-    overflow:hidden;
+.project-info{
+    padding:25px;
 }
 
-/* BROWSER */
+.project-info h3{
+    margin-bottom:6px;
+}
+
+.project-info p{
+    color:#6b7280;
+    font-size:14px;
+}
+
+/* MOCKUP COMMON */
+
+.mockup{
+    height:330px;
+    background:#dfe5ec;
+    padding:25px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
 
 .browser{
-    background:#fff;
+    width:100%;
     height:100%;
-    border-radius:10px;
-    box-shadow:0 12px 30px rgba(0,0,0,.12);
+    background:white;
+    border-radius:9px;
     overflow:hidden;
+    box-shadow:0 15px 35px rgba(0,0,0,.16);
 }
 
 .browser-bar{
-    height:31px;
-    background:#edf1ef;
+    height:28px;
+    background:#eef1f5;
     display:flex;
     align-items:center;
     gap:5px;
-    padding:0 12px;
+    padding-left:12px;
 }
 
 .browser-dot{
     width:7px;
     height:7px;
-    background:#9ba9a3;
+    background:#9ca3af;
     border-radius:50%;
 }
 
-.browser-content{
-    padding:24px;
+/* MOCKUP 1 */
+
+.business-site{
+    padding:20px;
 }
 
-/* CORPORATE */
-
-.corp-header{
+.site-nav{
     display:flex;
     justify-content:space-between;
     align-items:center;
-    margin-bottom:35px;
+    margin-bottom:25px;
 }
 
-.mini-logo{
-    font-size:13px;
-    font-weight:900;
+.site-logo{
+    font-weight:800;
+    font-size:15px;
 }
 
-.mini-nav{
+.site-links{
     display:flex;
     gap:8px;
 }
 
-.mini-nav span{
-    width:35px;
-    height:4px;
-    background:#d9e1dd;
-    border-radius:3px;
+.site-links span{
+    width:30px;
+    height:5px;
+    background:#d1d5db;
+    border-radius:5px;
 }
 
-.corp-hero{
+.business-hero{
     display:grid;
     grid-template-columns:1fr 1fr;
-    gap:20px;
+    gap:15px;
     align-items:center;
 }
 
-.corp-title{
-    font-size:28px;
-    font-weight:900;
+.business-copy h4{
+    font-size:25px;
     line-height:1.05;
-    margin-bottom:10px;
+    margin-bottom:8px;
 }
 
-.fake-text{
-    height:6px;
-    background:#dce4e0;
-    width:85%;
-    border-radius:3px;
-    margin-bottom:7px;
-}
-
-.fake-text.short{
-    width:60%;
+.business-copy p{
+    font-size:9px;
+    color:#6b7280;
+    margin-bottom:12px;
 }
 
 .fake-button{
     display:inline-block;
-    margin-top:14px;
-    width:75px;
-    height:22px;
-    background:#0a875f;
+    background:#2563eb;
+    color:white;
+    padding:7px 12px;
+    font-size:8px;
     border-radius:4px;
 }
 
-.corp-image{
-    height:125px;
-    border-radius:8px;
-    background:linear-gradient(135deg,#183b30,#55bd95);
+.business-photo{
+    height:120px;
+    border-radius:7px;
+    background:linear-gradient(135deg,#1e3a8a,#60a5fa);
+    position:relative;
+    overflow:hidden;
 }
 
-.corp-cards{
+.business-photo:before{
+    content:"";
+    position:absolute;
+    width:75px;
+    height:75px;
+    background:rgba(255,255,255,.2);
+    border-radius:50%;
+    left:25px;
+    top:25px;
+}
+
+.business-bottom{
     display:grid;
     grid-template-columns:repeat(3,1fr);
     gap:8px;
-    margin-top:24px;
+    margin-top:15px;
 }
 
-.corp-card{
-    height:55px;
-    background:#f1f5f3;
-    border-radius:6px;
+.business-bottom div{
+    height:42px;
+    background:#f3f4f6;
+    border-radius:5px;
 }
 
-/* ECOMMERCE */
+/* MOCKUP 2 */
+
+.store{
+    padding:18px;
+}
 
 .store-header{
+    display:flex;
+    justify-content:space-between;
+    margin-bottom:15px;
+}
+
+.store-header strong{
+    font-size:15px;
+}
+
+.store-menu{
+    display:flex;
+    gap:7px;
+}
+
+.store-menu span{
+    width:28px;
+    height:5px;
+    background:#d1d5db;
+}
+
+.store-hero{
+    background:#f3f4f6;
+    padding:14px;
+    border-radius:6px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:14px;
+}
+
+.store-hero h4{
+    font-size:19px;
+}
+
+.store-hero p{
+    font-size:8px;
+    color:#6b7280;
+}
+
+.store-products{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:10px;
+}
+
+.product{
+    border:1px solid #e5e7eb;
+    border-radius:6px;
+    overflow:hidden;
+}
+
+.product-img{
+    height:70px;
+    background:linear-gradient(135deg,#e5e7eb,#9ca3af);
+}
+
+.product:nth-child(2) .product-img{
+    background:linear-gradient(135deg,#dbeafe,#3b82f6);
+}
+
+.product:nth-child(3) .product-img{
+    background:linear-gradient(135deg,#fef3c7,#f59e0b);
+}
+
+.product-text{
+    padding:7px;
+}
+
+.product-text strong{
+    font-size:9px;
+}
+
+.product-text small{
+    display:block;
+    color:#6b7280;
+    font-size:8px;
+}
+
+/* MOCKUP 3 */
+
+.brand{
+    height:100%;
+    background:#18181b;
+    color:white;
+    padding:25px;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+}
+
+.brand-top{
+    display:flex;
+    justify-content:space-between;
+}
+
+.brand-name{
+    font-size:20px;
+    font-weight:800;
+}
+
+.brand-mark{
+    width:35px;
+    height:35px;
+    border:2px solid white;
+    border-radius:50%;
+}
+
+.brand-center{
+    text-align:center;
+}
+
+.brand-center h4{
+    font-family:Georgia,serif;
+    font-size:34px;
+    font-weight:400;
+}
+
+.brand-center p{
+    color:#a1a1aa;
+    font-size:9px;
+    letter-spacing:2px;
+}
+
+.palette{
+    display:flex;
+    gap:8px;
+}
+
+.palette span{
+    height:28px;
+    flex:1;
+    border-radius:4px;
+}
+
+.palette span:nth-child(1){background:#f5f5f4;}
+.palette span:nth-child(2){background:#a8a29e;}
+.palette span:nth-child(3){background:#57534e;}
+.palette span:nth-child(4){background:#292524;}
+
+/* MOCKUP 4 */
+
+.landing{
+    padding:20px;
+}
+
+.land-nav{
     display:flex;
     justify-content:space-between;
     margin-bottom:22px;
 }
 
-.store-title{
-    font-size:21px;
-    font-weight:900;
-}
-
-.cart{
-    width:45px;
-    height:22px;
-    background:#e4eee9;
-    border-radius:5px;
-}
-
-.products{
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:12px;
-}
-
-.product{
-    border:1px solid #e5eae8;
-    border-radius:7px;
-    padding:8px;
-}
-
-.product-image{
-    height:105px;
-    border-radius:5px;
-    background:#e9efec;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    margin-bottom:9px;
-}
-
-.product-circle{
-    width:55px;
-    height:55px;
-    border-radius:50%;
-    background:#b9d8cb;
-}
-
-.product-name{
-    height:7px;
-    width:70%;
-    background:#cbd5d0;
-    border-radius:4px;
-    margin-bottom:6px;
-}
-
-.product-price{
-    height:6px;
-    width:40%;
-    background:#0a875f;
-    border-radius:3px;
-}
-
-/* BRAND IDENTITY */
-
-.brand-card{
-    height:100%;
-    background:#18221f;
-    border-radius:9px;
-    padding:30px;
-    color:white;
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    align-items:center;
-}
-
-.brand-mark{
-    font-size:45px;
-    font-weight:900;
-    letter-spacing:-4px;
-}
-
-.brand-name{
-    font-size:14px;
+.land-logo{
     font-weight:800;
-    margin-top:5px;
 }
 
-.brand-description{
-    color:#aab8b2;
-    font-size:9px;
-    max-width:160px;
-    margin-top:10px;
-}
-
-.palette{
-    display:flex;
-    justify-content:flex-end;
-    gap:8px;
-}
-
-.palette span{
-    display:block;
-    width:35px;
-    height:110px;
-    border-radius:6px;
-}
-
-.palette span:nth-child(1){
-    background:#f5f1e8;
-}
-
-.palette span:nth-child(2){
-    background:#0a875f;
-}
-
-.palette span:nth-child(3){
-    background:#20352d;
-}
-
-/* LANDING PAGE */
-
-.landing{
-    background:#fff;
-    height:100%;
-    padding:25px;
-    border-radius:9px;
-}
-
-.landing-nav{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    margin-bottom:32px;
-}
-
-.landing-logo{
-    font-weight:900;
-    font-size:12px;
-}
-
-.landing-btn{
+.land-nav span{
     width:55px;
-    height:17px;
-    background:#0a875f;
-    border-radius:4px;
+    height:6px;
+    background:#d1d5db;
 }
 
-.landing-main{
+.land-main{
     text-align:center;
 }
 
-.landing-main h3{
+.land-main h4{
     font-size:29px;
     line-height:1.05;
-    margin-bottom:11px;
-}
-
-.landing-main p{
-    color:#7b8782;
-    font-size:9px;
-    max-width:300px;
+    max-width:400px;
     margin:auto;
 }
 
-.landing-action{
-    width:85px;
-    height:23px;
-    background:#13251f;
+.land-main p{
+    font-size:9px;
+    color:#6b7280;
+    max-width:300px;
+    margin:10px auto;
+}
+
+.land-button{
+    display:inline-block;
+    background:#111827;
+    color:white;
+    padding:8px 15px;
     border-radius:4px;
-    margin:17px auto 25px;
+    font-size:8px;
+    margin-bottom:18px;
 }
 
-.landing-blocks{
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:8px;
+.land-visual{
+    height:100px;
+    background:#eef2ff;
+    border-radius:8px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:12px;
 }
 
-.landing-block{
+.land-card{
+    width:65px;
     height:65px;
-    border-radius:6px;
-    background:#e9efec;
+    background:white;
+    border-radius:7px;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
 }
 
-/* PROJECT INFO */
-
-.project-info{
-    padding:23px 24px 25px;
-}
-
-.project-type{
-    color:#0a875f;
-    font-size:11px;
-    text-transform:uppercase;
-    font-weight:800;
-    letter-spacing:1px;
-    margin-bottom:6px;
-}
-
-.project-info h3{
-    font-size:21px;
-    margin-bottom:7px;
-}
-
-.project-info p{
-    color:#6b7772;
-    font-size:13px;
-}
-
-/* ================= ABOUT ================= */
+/* ABOUT */
 
 .about{
-    background:#fff;
+    background:#111827;
+    color:white;
 }
 
 .about-grid{
@@ -724,149 +695,84 @@ section{
 
 .about h2{
     font-size:40px;
-    line-height:1.12;
-    margin-bottom:18px;
+    line-height:1.1;
+    margin:10px 0 20px;
 }
 
 .about p{
-    color:#66736d;
-    margin-bottom:15px;
+    color:#9ca3af;
 }
 
 .skills{
-    display:flex;
-    flex-wrap:wrap;
-    gap:9px;
-    margin-top:25px;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:12px;
 }
 
 .skill{
-    padding:9px 13px;
-    border:1px solid #dfe6e2;
-    border-radius:6px;
-    font-size:12px;
-    font-weight:700;
+    border:1px solid #374151;
+    padding:18px;
+    border-radius:8px;
+    color:#d1d5db;
 }
 
-.about-card{
-    background:#13251f;
-    color:white;
-    padding:38px;
-    border-radius:15px;
-}
-
-.about-card h3{
-    font-size:25px;
-    margin-bottom:25px;
-}
-
-.about-list{
-    list-style:none;
-}
-
-.about-list li{
-    padding:14px 0;
-    border-bottom:1px solid #365047;
-    color:#d4ded9;
-    font-size:14px;
-}
-
-.about-list li:last-child{
-    border-bottom:none;
-}
-
-/* ================= PROCESS ================= */
+/* PROCESS */
 
 .process{
-    background:#f5f7f6;
-}
-
-.process-grid{
     display:grid;
     grid-template-columns:repeat(4,1fr);
-    gap:18px;
-}
-
-.process-step{
-    background:white;
-    border:1px solid #e2e8e5;
-    padding:25px;
-    border-radius:12px;
-}
-
-.step-number{
-    color:#0a875f;
-    font-size:12px;
-    font-weight:900;
-    margin-bottom:25px;
-}
-
-.process-step h3{
-    font-size:18px;
-    margin-bottom:8px;
-}
-
-.process-step p{
-    color:#718079;
-    font-size:13px;
-}
-
-/* ================= CTA ================= */
-
-.cta{
-    background:#13251f;
-    color:#fff;
-}
-
-.cta-box{
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    gap:30px;
-}
-
-.cta h2{
-    font-size:40px;
-    line-height:1.1;
-    margin-bottom:10px;
-}
-
-.cta p{
-    color:#b9c8c1;
-    max-width:600px;
-}
-
-.cta .btn-primary{
-    white-space:nowrap;
-    background:#0a875f;
-}
-
-/* ================= FOOTER ================= */
-
-footer{
-    background:#0c1814;
-    color:#aebbb5;
-    padding:30px 0;
-}
-
-.footer{
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
     gap:20px;
 }
 
-.footer strong{
-    color:#fff;
+.step{
+    background:white;
+    padding:25px;
+    border:1px solid #e5e7eb;
+    border-radius:10px;
 }
 
-.footer p{
-    font-size:12px;
+.step-number{
+    color:#2563eb;
+    font-size:13px;
+    font-weight:800;
 }
 
-/* ================= RESPONSIVE ================= */
+/* CTA */
 
-@media(max-width:900px){
+.cta{
+    background:#2563eb;
+    color:white;
+    text-align:center;
+}
+
+.cta h2{
+    font-size:42px;
+    margin-bottom:15px;
+}
+
+.cta p{
+    opacity:.85;
+    margin-bottom:25px;
+}
+
+.cta .btn{
+    background:white;
+    color:#111827;
+}
+
+/* FOOTER */
+
+footer{
+    background:#0b1220;
+    color:#9ca3af;
+    padding:30px 0;
+    text-align:center;
+    font-size:13px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:850px){
 
     .hero-grid,
     .about-grid{
@@ -874,92 +780,76 @@ footer{
     }
 
     .hero h1{
-        font-size:48px;
+        font-size:42px;
     }
 
-    .service-grid{
+    .services{
         grid-template-columns:1fr 1fr;
     }
 
-    .process-grid{
+    .projects{
+        grid-template-columns:1fr;
+    }
+
+    .process{
         grid-template-columns:1fr 1fr;
     }
 
-}
-
-@media(max-width:700px){
-
-    nav ul{
+    nav{
         display:none;
     }
+}
 
-    .nav-btn{
-        padding:9px 13px;
+@media(max-width:550px){
+
+    section{
+        padding:60px 0;
+    }
+
+    .services,
+    .projects,
+    .process{
+        grid-template-columns:1fr;
+    }
+
+    .hero h1{
+        font-size:36px;
     }
 
     .hero{
         padding:60px 0;
     }
 
-    .hero h1{
-        font-size:40px;
-        letter-spacing:-2px;
+    .mockup{
+        height:280px;
+        padding:15px;
     }
 
-    .hero-preview{
-        transform:none;
-    }
-
-    .project-grid,
-    .service-grid,
-    .process-grid{
+    .business-hero{
         grid-template-columns:1fr;
     }
 
-    .project-visual{
-        height:300px;
+    .business-photo{
+        display:none;
     }
-
-    .about h2,
-    .section-heading h2,
-    .cta h2{
-        font-size:32px;
-    }
-
-    .cta-box,
-    .footer{
-        flex-direction:column;
-        align-items:flex-start;
-    }
-
-    section{
-        padding:65px 0;
-    }
-
 }
-
 </style>
 </head>
 
 <body>
 
-<!-- HEADER -->
-
 <header>
 <div class="container nav">
 
-<a href="#" class="logo">Murtaza<span>.</span></a>
+<div class="logo">Murtaza<span>.</span></div>
 
 <nav>
-<ul>
-<li><a href="#services">Services</a></li>
-<li><a href="#projects">Projects</a></li>
-<li><a href="#about">About</a></li>
-<li><a href="#process">Process</a></li>
-</ul>
+<a href="#services">Services</a>
+<a href="#projects">Projects</a>
+<a href="#about">About</a>
+<a href="#process">Process</a>
+<a class="nav-btn" href="mailto:hello@example.com">Let's Talk</a>
 </nav>
-
-<a href="#contact" class="nav-btn">Let's Talk</a>
 
 </div>
 </header>
@@ -968,91 +858,74 @@ footer{
 <!-- HERO -->
 
 <section class="hero">
-
 <div class="container hero-grid">
 
 <div>
+<span class="badge">WEB DESIGN • GRAPHIC DESIGN</span>
 
-<div class="badge">WEB DESIGN • GRAPHIC DESIGN</div>
-
-<h1>
-Modern websites that make businesses <span>look professional.</span>
-</h1>
+<h1>Modern websites that make businesses look professional.</h1>
 
 <p>
-I design clean, responsive and conversion-focused websites for businesses, brands and entrepreneurs — supported by strong visual design.
+I design clean, responsive websites and visual identities
+that help businesses present themselves professionally online.
 </p>
 
-<div class="hero-buttons">
-<a href="#projects" class="btn btn-primary">View My Work</a>
-<a href="#contact" class="btn btn-secondary">Start a Project</a>
+<div class="buttons">
+<a href="#projects" class="btn btn-primary">View Projects</a>
+<a href="#services" class="btn btn-secondary">My Services</a>
+</div>
 </div>
 
+
+<div class="dashboard">
+
+<div class="dashboard-top">
+<span class="dot"></span>
+<span class="dot"></span>
+<span class="dot"></span>
 </div>
 
+<div class="dashboard-screen">
 
-<div class="hero-preview">
+<div class="dash-nav">
+<div class="dash-logo">NORTHLINE</div>
 
-<div class="preview-top">
-<div class="dot"></div>
-<div class="dot"></div>
-<div class="dot"></div>
+<div class="dash-menu">
+<span></span>
+<span></span>
+<span></span>
+</div>
 </div>
 
-<div class="preview-window">
+<div class="dash-hero">
 
-<div class="preview-sidebar">
+<div class="dash-copy">
+<h3>Build a stronger digital presence.</h3>
+<p>Modern design, clear communication and responsive experiences.</p>
+</div>
 
-<div class="preview-logo">MURTAZA.STUDIO</div>
-
-<div class="side-line active"></div>
-<div class="side-line"></div>
-<div class="side-line"></div>
-<div class="side-line"></div>
-<div class="side-line"></div>
+<div class="dash-image"></div>
 
 </div>
 
-<div class="preview-content">
-
-<div class="preview-title">Project Dashboard</div>
-<div class="preview-sub">Website performance overview</div>
-
-<div class="stats">
-
-<div class="stat">
+<div class="dash-cards">
+<div class="dash-card">
 <strong>24K</strong>
 <small>Visitors</small>
 </div>
 
-<div class="stat">
+<div class="dash-card">
 <strong>86%</strong>
 <small>Growth</small>
 </div>
 
-<div class="stat">
+<div class="dash-card">
 <strong>4.8</strong>
 <small>Rating</small>
 </div>
-
-</div>
-
-<div class="chart">
-<div class="bar b1"></div>
-<div class="bar b2"></div>
-<div class="bar b3"></div>
-<div class="bar b4"></div>
-<div class="bar b5"></div>
-<div class="bar b6"></div>
-<div class="bar b7"></div>
 </div>
 
 </div>
-
-</div>
-
-</div>
-
 </div>
 
 </div>
@@ -1061,200 +934,125 @@ I design clean, responsive and conversion-focused websites for businesses, brand
 
 <!-- SERVICES -->
 
-<section class="services" id="services">
-
+<section id="services">
 <div class="container">
 
-<div class="section-heading">
-
-<div class="eyebrow">What I Do</div>
-
-<h2>Design and development for modern businesses.</h2>
-
-<p>
-From the first visual concept to a polished website, I create digital experiences that are clean, practical and professional.
-</p>
-
+<div class="section-head">
+<span>WHAT I DO</span>
+<h2>Services</h2>
+<p>Design and development services for modern businesses.</p>
 </div>
 
-
-<div class="service-grid">
+<div class="services">
 
 <div class="service">
-
-<div class="service-number">01</div>
-
+<span class="service-number">01</span>
 <h3>Business Websites</h3>
-
-<p>
-Professional websites designed to present your business clearly and turn visitors into potential customers.
-</p>
-
+<p>Professional websites designed to build trust and generate enquiries.</p>
 </div>
 
-
 <div class="service">
-
-<div class="service-number">02</div>
-
+<span class="service-number">02</span>
 <h3>E-Commerce</h3>
-
-<p>
-Modern online store layouts with product-focused design, clear navigation and strong calls to action.
-</p>
-
+<p>Clean online store layouts designed around products and conversions.</p>
 </div>
 
-
 <div class="service">
-
-<div class="service-number">03</div>
-
+<span class="service-number">03</span>
 <h3>WordPress Websites</h3>
-
-<p>
-Clean WordPress-style website designs for businesses, services, professionals and local brands.
-</p>
-
+<p>Modern WordPress-style layouts for businesses and professionals.</p>
 </div>
 
-
 <div class="service">
-
-<div class="service-number">04</div>
-
+<span class="service-number">04</span>
 <h3>Landing Pages</h3>
-
-<p>
-Focused landing pages designed around one clear message, one audience and one primary action.
-</p>
-
+<p>Focused landing pages designed to communicate one clear message.</p>
 </div>
 
-
 <div class="service">
-
-<div class="service-number">05</div>
-
+<span class="service-number">05</span>
 <h3>Graphic Design</h3>
-
-<p>
-Logos, branding, social media graphics, marketing materials and other visual communication.
-</p>
-
+<p>Brand identity, social media graphics and marketing materials.</p>
 </div>
-
 
 <div class="service">
-
-<div class="service-number">06</div>
-
+<span class="service-number">06</span>
 <h3>Responsive Design</h3>
-
-<p>
-Layouts designed to look professional across desktop, tablet and mobile screen sizes.
-</p>
-
+<p>Layouts designed to work beautifully across desktop, tablet and mobile.</p>
 </div>
 
 </div>
-
 </div>
-
 </section>
 
 
 <!-- PROJECTS -->
 
-<section class="projects" id="projects">
-
+<section id="projects">
 <div class="container">
 
-<div class="section-heading">
-
-<div class="eyebrow">Selected Work</div>
-
-<h2>Concept projects built to demonstrate my design skills.</h2>
-
-<p>
-These are self-initiated portfolio concepts created to demonstrate different website and branding capabilities.
-</p>
-
+<div class="section-head">
+<span>SELECTED WORK</span>
+<h2>Project Concepts</h2>
+<p>Self-initiated design concepts created to demonstrate web and visual design skills.</p>
 </div>
 
 
-<div class="project-grid">
+<div class="projects">
 
 
 <!-- PROJECT 1 -->
 
 <div class="project">
 
-<div class="project-visual">
+<div class="mockup">
 
 <div class="browser">
 
 <div class="browser-bar">
-<div class="browser-dot"></div>
-<div class="browser-dot"></div>
-<div class="browser-dot"></div>
+<span class="browser-dot"></span>
+<span class="browser-dot"></span>
+<span class="browser-dot"></span>
 </div>
 
-<div class="browser-content">
+<div class="business-site">
 
-<div class="corp-header">
+<div class="site-nav">
+<div class="site-logo">NORTHLINE</div>
 
-<div class="mini-logo">NORTHLINE</div>
-
-<div class="mini-nav">
+<div class="site-links">
 <span></span>
 <span></span>
 <span></span>
 </div>
+</div>
+
+<div class="business-hero">
+
+<div class="business-copy">
+<h4>Grow your business with confidence.</h4>
+<p>Strategic solutions and professional services for ambitious businesses.</p>
+<span class="fake-button">Get Started</span>
+</div>
+
+<div class="business-photo"></div>
 
 </div>
 
-<div class="corp-hero">
-
-<div>
-
-<div class="corp-title">
-Building better business experiences.
-</div>
-
-<div class="fake-text"></div>
-<div class="fake-text short"></div>
-
-<div class="fake-button"></div>
-
-</div>
-
-<div class="corp-image"></div>
-
-</div>
-
-<div class="corp-cards">
-<div class="corp-card"></div>
-<div class="corp-card"></div>
-<div class="corp-card"></div>
+<div class="business-bottom">
+<div></div>
+<div></div>
+<div></div>
 </div>
 
 </div>
-
 </div>
 
 </div>
 
 <div class="project-info">
-
-<div class="project-type">Business Website</div>
-
 <h3>Corporate Business Website</h3>
-
-<p>
-A clean, professional website concept designed to establish trust and clearly present business services.
-</p>
-
+<p>Modern business website concept with professional navigation, hero section and service cards.</p>
 </div>
 
 </div>
@@ -1264,54 +1062,61 @@ A clean, professional website concept designed to establish trust and clearly pr
 
 <div class="project">
 
-<div class="project-visual">
+<div class="mockup">
 
 <div class="browser">
 
 <div class="browser-bar">
-<div class="browser-dot"></div>
-<div class="browser-dot"></div>
-<div class="browser-dot"></div>
+<span class="browser-dot"></span>
+<span class="browser-dot"></span>
+<span class="browser-dot"></span>
 </div>
 
-<div class="browser-content">
+<div class="store">
 
 <div class="store-header">
+<strong>MONO STORE</strong>
 
-<div class="store-title">MODERN STORE</div>
-
-<div class="cart"></div>
-
+<div class="store-menu">
+<span></span>
+<span></span>
+</div>
 </div>
 
-<div class="products">
+<div class="store-hero">
+<div>
+<h4>New Collection</h4>
+<p>Simple products. Better living.</p>
+</div>
+</div>
+
+<div class="store-products">
 
 <div class="product">
-<div class="product-image">
-<div class="product-circle"></div>
+<div class="product-img"></div>
+<div class="product-text">
+<strong>Modern Chair</strong>
+<small>$129</small>
 </div>
-<div class="product-name"></div>
-<div class="product-price"></div>
-</div>
-
-<div class="product">
-<div class="product-image">
-<div class="product-circle"></div>
-</div>
-<div class="product-name"></div>
-<div class="product-price"></div>
 </div>
 
 <div class="product">
-<div class="product-image">
-<div class="product-circle"></div>
+<div class="product-img"></div>
+<div class="product-text">
+<strong>Desk Lamp</strong>
+<small>$79</small>
 </div>
-<div class="product-name"></div>
-<div class="product-price"></div>
+</div>
+
+<div class="product">
+<div class="product-img"></div>
+<div class="product-text">
+<strong>Travel Bag</strong>
+<small>$99</small>
+</div>
 </div>
 
 </div>
-
 </div>
 
 </div>
@@ -1319,15 +1124,8 @@ A clean, professional website concept designed to establish trust and clearly pr
 </div>
 
 <div class="project-info">
-
-<div class="project-type">E-Commerce</div>
-
 <h3>Modern Online Store</h3>
-
-<p>
-A product-focused e-commerce concept with clean product cards, pricing hierarchy and shopping-focused layout.
-</p>
-
+<p>E-commerce concept showing product presentation, pricing and clean shopping interface.</p>
 </div>
 
 </div>
@@ -1337,27 +1135,34 @@ A product-focused e-commerce concept with clean product cards, pricing hierarchy
 
 <div class="project">
 
-<div class="project-visual">
+<div class="mockup">
 
-<div class="brand-card">
+<div class="browser">
 
-<div>
-
-<div class="brand-mark">A.</div>
-
-<div class="brand-name">ATELIER</div>
-
-<div class="brand-description">
-Visual identity concept created for a modern creative brand.
+<div class="browser-bar">
+<span class="browser-dot"></span>
+<span class="browser-dot"></span>
+<span class="browser-dot"></span>
 </div>
 
+<div class="brand">
+
+<div class="brand-top">
+<div class="brand-name">ATELIER</div>
+<div class="brand-mark"></div>
+</div>
+
+<div class="brand-center">
+<h4>A. Atelier</h4>
+<p>CREATIVE STUDIO</p>
 </div>
 
 <div class="palette">
-
 <span></span>
 <span></span>
 <span></span>
+<span></span>
+</div>
 
 </div>
 
@@ -1366,15 +1171,8 @@ Visual identity concept created for a modern creative brand.
 </div>
 
 <div class="project-info">
-
-<div class="project-type">Graphic Design</div>
-
 <h3>Brand Identity System</h3>
-
-<p>
-A visual identity concept combining logo direction, typography and a simple professional colour system.
-</p>
-
+<p>Minimal visual identity concept including typography, logo direction and colour palette.</p>
 </div>
 
 </div>
@@ -1384,44 +1182,39 @@ A visual identity concept combining logo direction, typography and a simple prof
 
 <div class="project">
 
-<div class="project-visual">
+<div class="mockup">
 
 <div class="browser">
 
 <div class="browser-bar">
-<div class="browser-dot"></div>
-<div class="browser-dot"></div>
-<div class="browser-dot"></div>
+<span class="browser-dot"></span>
+<span class="browser-dot"></span>
+<span class="browser-dot"></span>
 </div>
 
 <div class="landing">
 
-<div class="landing-nav">
-
-<div class="landing-logo">FLOW</div>
-
-<div class="landing-btn"></div>
-
+<div class="land-nav">
+<div class="land-logo">FLOW</div>
+<span></span>
 </div>
 
-<div class="landing-main">
+<div class="land-main">
 
-<h3>
-Turn attention into action.
-</h3>
+<h4>Work smarter. Move faster.</h4>
 
 <p>
-A focused landing page concept designed around one clear message and a strong call to action.
+A focused digital product designed to help modern teams manage their workflow.
 </p>
 
-<div class="landing-action"></div>
+<span class="land-button">Start Free</span>
 
+<div class="land-visual">
+<div class="land-card"></div>
+<div class="land-card"></div>
+<div class="land-card"></div>
 </div>
 
-<div class="landing-blocks">
-<div class="landing-block"></div>
-<div class="landing-block"></div>
-<div class="landing-block"></div>
 </div>
 
 </div>
@@ -1431,209 +1224,112 @@ A focused landing page concept designed around one clear message and a strong ca
 </div>
 
 <div class="project-info">
-
-<div class="project-type">Landing Page</div>
-
 <h3>Conversion-Focused Landing Page</h3>
-
-<p>
-A focused landing page concept with strong hierarchy, clear messaging and a simple conversion path.
-</p>
-
+<p>Product landing page concept with strong hierarchy, CTA and visual product presentation.</p>
 </div>
 
 </div>
 
 
 </div>
-
 </div>
-
 </section>
 
 
 <!-- ABOUT -->
 
 <section class="about" id="about">
-
 <div class="container about-grid">
 
 <div>
 
-<div class="eyebrow">About Me</div>
+<span class="badge">ABOUT ME</span>
 
-<h2>Designing websites with both visuals and business goals in mind.</h2>
-
-<p>
-I combine web design and graphic design to create professional digital experiences for businesses and personal brands.
-</p>
+<h2>Designing websites and visuals with purpose.</h2>
 
 <p>
-My approach focuses on clean layouts, strong visual hierarchy, responsive design and clear communication.
+I combine web design and graphic design to create professional
+digital experiences for businesses, brands and entrepreneurs.
 </p>
+
+</div>
 
 <div class="skills">
 
-<div class="skill">Web Design</div>
-<div class="skill">HTML & CSS</div>
-<div class="skill">WordPress</div>
-<div class="skill">Graphic Design</div>
 <div class="skill">Adobe Illustrator</div>
-<div class="skill">Photoshop</div>
+<div class="skill">Adobe Photoshop</div>
+<div class="skill">CorelDRAW</div>
 <div class="skill">Canva</div>
+<div class="skill">HTML & CSS</div>
+<div class="skill">Responsive Design</div>
 
 </div>
 
 </div>
-
-
-<div class="about-card">
-
-<h3>What you can expect</h3>
-
-<ul class="about-list">
-
-<li>Clean and professional visual design</li>
-
-<li>Responsive layouts for different screens</li>
-
-<li>Business-focused website structure</li>
-
-<li>Strong typography and visual hierarchy</li>
-
-<li>Consistent branding across digital materials</li>
-
-</ul>
-
-</div>
-
-</div>
-
 </section>
 
 
 <!-- PROCESS -->
 
-<section class="process" id="process">
-
+<section id="process">
 <div class="container">
 
-<div class="section-heading">
-
-<div class="eyebrow">My Process</div>
-
-<h2>A simple process from idea to finished design.</h2>
-
-<p>
-Every project starts with understanding the goal and ends with a polished visual experience.
-</p>
-
+<div class="section-head">
+<span>HOW I WORK</span>
+<h2>Simple Process</h2>
 </div>
 
+<div class="process">
 
-<div class="process-grid">
-
-<div class="process-step">
-
-<div class="step-number">01 — DISCOVER</div>
-
-<h3>Understand</h3>
-
-<p>
-Understand the business, audience, goals and requirements before designing.
-</p>
-
+<div class="step">
+<span class="step-number">01</span>
+<h3>Discover</h3>
+<p>Understand the business, audience and project goals.</p>
 </div>
 
-
-<div class="process-step">
-
-<div class="step-number">02 — PLAN</div>
-
-<h3>Structure</h3>
-
-<p>
-Create the page structure, content hierarchy and visual direction.
-</p>
-
+<div class="step">
+<span class="step-number">02</span>
+<h3>Plan</h3>
+<p>Create the structure, content direction and visual approach.</p>
 </div>
 
-
-<div class="process-step">
-
-<div class="step-number">03 — DESIGN</div>
-
-<h3>Build</h3>
-
-<p>
-Turn the approved direction into a clean and responsive website design.
-</p>
-
+<div class="step">
+<span class="step-number">03</span>
+<h3>Design</h3>
+<p>Build the visual design with strong hierarchy and consistency.</p>
 </div>
 
-
-<div class="process-step">
-
-<div class="step-number">04 — REFINE</div>
-
-<h3>Polish</h3>
-
-<p>
-Review spacing, typography, responsiveness and details before delivery.
-</p>
-
+<div class="step">
+<span class="step-number">04</span>
+<h3>Refine</h3>
+<p>Review, improve and prepare the final responsive experience.</p>
 </div>
 
 </div>
-
 </div>
-
 </section>
 
 
 <!-- CTA -->
 
-<section class="cta" id="contact">
-
-<div class="container cta-box">
-
-<div>
+<section class="cta">
+<div class="container">
 
 <h2>Have a project in mind?</h2>
 
-<p>
-Let's create a professional website or visual identity that represents your business properly.
-</p>
+<p>Let's create something professional for your business.</p>
+
+<a href="mailto:hello@example.com" class="btn">Let's Talk</a>
 
 </div>
-
-<a href="mailto:hello@example.com" class="btn btn-primary">
-Let's Work Together
-</a>
-
-</div>
-
 </section>
 
 
-<!-- FOOTER -->
-
 <footer>
-
-<div class="container footer">
-
-<p>
-© 2026 <strong>Murtaza Khoso</strong>. Self-initiated portfolio demo.
-</p>
-
-<p>
-Web Design • Graphic Design • Digital Experiences
-</p>
-
+<div class="container">
+© 2026 Murtaza Khoso. Self-initiated portfolio demo.
 </div>
-
 </footer>
-
 
 </body>
 </html>
