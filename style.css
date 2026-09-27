@@ -18,3 +18,146 @@ a {
 button {
     font-family: inherit;
 }
+
+/* Container */
+
+.container {
+    width: min(1180px, 90%);
+    margin: 0 auto;
+}
+
+/* Header */
+
+.site-header {
+    background: #ffffff;
+    border-bottom: 1px solid #eeeeee;
+    padding: 22px 0;
+}
+
+.site-header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+.main-nav {
+    display: flex;
+    gap: 32px;
+}
+
+.main-nav a {
+    font-size: 15px;
+    color: #333333;
+}
+
+.main-nav a:hover {
+    color: #000000;
+}
+
+.cart {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+/* Hero */
+
+.hero {
+    min-height: 620px;
+    background: #f5f1eb;
+    display: flex;
+    align-items: center;
+}
+
+.hero-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 70px;
+    padding: 70px 0;
+}
+
+.hero-label {
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: clamp(48px, 6vw, 78px);
+    line-height: 0.98;
+    letter-spacing: -3px;
+    margin-bottom: 28px;
+}
+
+.hero-description {
+    max-width: 430px;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #555555;
+    margin-bottom: 35px;
+}
+
+.hero-button {
+    display: inline-block;
+    background: #111111;
+    color: #ffffff;
+    padding: 16px 30px;
+    font-size: 15px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.hero-button:hover {
+    background: #333333;
+}
+
+/* Hero Image */
+
+.hero-image {
+    height: 470px;
+}
+
+.hero-placeholder {
+    width: 100%;
+    height: 100%;
+    background: #ded8cf;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #777777;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+
+    .main-nav {
+        display: none;
+    }
+
+    .hero-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .hero {
+        min-height: auto;
+    }
+
+    .hero-image {
+        height: 350px;
+    }
+
+    .hero h1 {
+        letter-spacing: -2px;
+    }
+}
