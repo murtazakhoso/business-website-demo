@@ -135,31 +135,6 @@ button {
     display: block;
 }
 
-/* Mobile */
-
-@media (max-width: 768px) {
-
-    .main-nav {
-        display: none;
-    }
-
-    .hero-content {
-        grid-template-columns: 1fr;
-        gap: 40px;
-    }
-
-    .hero {
-        min-height: auto;
-    }
-
-    .hero-image {
-        height: 350px;
-    }
-
-    .hero h1 {
-        letter-spacing: -2px;
-    }
-}
 /* Categories */
 
 .categories {
@@ -201,54 +176,6 @@ button {
 }
 
 .category-image {
-    height: 380px;
-    display: flex;
-    align-items: flex-end;
-    padding: 28px;
-    background-size: cover;
-    background-position: center;
-    transition: transform 0.3s ease;
-}
-
-.category-card:hover .category-image {
-    transform: translateY(-5px);
-}
-
-.category-image span {
-    background: #ffffff;
-    padding: 12px 20px;
-    font-size: 16px;
-    font-weight: 600;
-}
-
-.category-fashion {
-    background: #e8dfd4;
-}
-
-.category-shoes {
-    background: #d9d9d7;
-}
-
-.category-accessories {
-    background: #cfc6bc;
-}
-
-/* Categories Mobile */
-
-@media (max-width: 768px) {
-
-    .categories {
-        padding: 70px 0;
-    }
-
-    .section-heading h2 {
-        font-size: 34px;
-    }
-
-    .category-grid {
-        grid-template-columns: 1fr;
-    }
-    .category-image {
     position: relative;
     height: 380px;
     overflow: hidden;
@@ -271,6 +198,59 @@ button {
     font-weight: 600;
     z-index: 2;
 }
+
+.category-card:hover .category-image {
+    transform: translateY(-5px);
+}
+
+.category-fashion {
+    background: #e8dfd4;
+}
+
+.category-shoes {
+    background: #d9d9d7;
+}
+
+.category-accessories {
+    background: #cfc6bc;
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+
+    .main-nav {
+        display: none;
+    }
+
+    .hero-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .hero {
+        min-height: auto;
+    }
+
+    .hero-image {
+        height: 350px;
+    }
+
+    .hero h1 {
+        letter-spacing: -2px;
+    }
+
+    .categories {
+        padding: 70px 0;
+    }
+
+    .section-heading h2 {
+        font-size: 34px;
+    }
+
+    .category-grid {
+        grid-template-columns: 1fr;
+    }
 
     .category-image {
         height: 320px;
