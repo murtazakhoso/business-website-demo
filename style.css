@@ -160,3 +160,96 @@ button {
         letter-spacing: -2px;
     }
 }
+/* Categories */
+
+.categories {
+    padding: 100px 0;
+    background: #ffffff;
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-label {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+
+.section-heading h2 {
+    font-size: 42px;
+    letter-spacing: -1.5px;
+    margin-bottom: 15px;
+}
+
+.section-heading > p:last-child {
+    color: #666666;
+    font-size: 16px;
+}
+
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.category-card {
+    display: block;
+}
+
+.category-image {
+    height: 380px;
+    display: flex;
+    align-items: flex-end;
+    padding: 28px;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.3s ease;
+}
+
+.category-card:hover .category-image {
+    transform: translateY(-5px);
+}
+
+.category-image span {
+    background: #ffffff;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.category-fashion {
+    background: #e8dfd4;
+}
+
+.category-shoes {
+    background: #d9d9d7;
+}
+
+.category-accessories {
+    background: #cfc6bc;
+}
+
+/* Categories Mobile */
+
+@media (max-width: 768px) {
+
+    .categories {
+        padding: 70px 0;
+    }
+
+    .section-heading h2 {
+        font-size: 34px;
+    }
+
+    .category-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .category-image {
+        height: 320px;
+    }
+}
