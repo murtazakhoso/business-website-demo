@@ -409,3 +409,57 @@ button {
 .collection-button:hover {
     background: #333333;
 }
+/* Testimonials */
+
+.testimonials {
+    padding: 100px 0;
+    background: #f8f8f8;
+}
+
+.testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.testimonial-card {
+    background: #ffffff;
+    padding: 35px;
+}
+
+.testimonial-rating {
+    font-size: 16px;
+    letter-spacing: 3px;
+    margin-bottom: 22px;
+}
+
+.testimonial-text {
+    color: #444444;
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+.testimonial-customer {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.testimonial-customer img {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+}
+
+.testimonial-customer h3 {
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+.testimonial-customer p {
+    color: #777777;
+    font-size: 13px;
+}
